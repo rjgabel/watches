@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>26</ID>
+      <Description>"Coordinates"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>ao.exe+4EFC80</Address>
+      <Offsets>
+        <Offset>80</Offset>
+        <Offset>770F98</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>25</ID>
+          <Description>"X"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>28</ID>
+          <Description>"Y"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>27</ID>
+          <Description>"Z"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+8</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"Party Member 1"</Description>
+      <DropDownList DisplayValueAsItem="1">00:Lloyd
+01:Elie
+02:Tio
+03:Randy
+04:Wazy
+05:Rixia
+06:Zeit
+07:Arios
+08:Noel
+09:Dudley
+0A:Garcia
+</DropDownList>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Byte</VariableType>
+      <Address>ao.exe+4EFC80</Address>
+      <Offsets>
+        <Offset>770FB0</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>32</ID>
+      <Description>"Experience"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>ao.exe+4EFC80</Address>
+      <Offsets>
+        <Offset>770FE0</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>30</ID>
+          <Description>"Lloyd"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+34*00</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>57</ID>
+          <Description>"Elie"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+34*01</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>93</ID>
+          <Description>"Tio"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+34*02</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>88</ID>
+          <Description>"Randy"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+34*03</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>58</ID>
+          <Description>"Wazy"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+34*04</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>96</ID>
+          <Description>"Rixia"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+34*05</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>105</ID>
+          <Description>"Zeit"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+34*06</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>34</ID>
+          <Description>"Arios"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+34*07</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>33</ID>
+          <Description>"Noel"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+34*08</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>35</ID>
+          <Description>"Dudley"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+34*09</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>104</ID>
+          <Description>"Garcia"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+34*0A</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>62</ID>
+      <Description>"Lloyd Master Quartz"</Description>
+      <DropDownList DisplayValueAsItem="1">00DC:Force
+00DD:Shield
+00DE:Pixie
+00DF:Crow
+00E0:Platinum
+00E1:Mirage
+00E2:Axe
+00E3:Canon
+00E4:Wing
+00E5:Aegis
+00E6:Scepter
+00E7:Phantom
+00E8:Keeper
+00E9:Moebius
+00EA:Juggler
+00EB:Criminal
+00EC:Kusanagi
+00ED:Emblem
+00EE:Katze
+00EF:Chevalier
+00F0:Magius
+</DropDownList>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>ao.exe+4EFC80</Address>
+      <Offsets>
+        <Offset>771C18</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>38</ID>
+      <Description>"Master Quartz Experience"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>ao.exe+4EFC80</Address>
+      <Offsets>
+        <Offset>774DBA</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>39</ID>
+          <Description>"Force"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00DC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>40</ID>
+          <Description>"Shield"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00DD</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>63</ID>
+          <Description>"Pixie"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00DE</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>64</ID>
+          <Description>"Crow"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00DF</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>68</ID>
+          <Description>"Platinum"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00E0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>69</ID>
+          <Description>"Mirage"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00E1</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>89</ID>
+          <Description>"Axe"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00E2</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>90</ID>
+          <Description>"Canon"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00E3</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>91</ID>
+          <Description>"Wing"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00E4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>94</ID>
+          <Description>"Aegis"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00E5</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>95</ID>
+          <Description>"Scepter"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00E6</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>108</ID>
+          <Description>"Phantom"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00E7</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>109</ID>
+          <Description>"Keeper"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00E8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>100</ID>
+          <Description>"Moebius"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00E9</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>102</ID>
+          <Description>"Juggler"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00EA</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>103</ID>
+          <Description>"Criminal"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00EB</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>111</ID>
+          <Description>"Kusanagi"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00EC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>107</ID>
+          <Description>"Emblem"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00ED</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>110</ID>
+          <Description>"Katze"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00EE</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>101</ID>
+          <Description>"Chevalier"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00EF</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>106</ID>
+          <Description>"Magius"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*00F0</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>48</ID>
+      <Description>"Mira"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>ao.exe+4EFC80</Address>
+      <Offsets>
+        <Offset>7752AC</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>71</ID>
+      <Description>"Tokens"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>ao.exe+4EFC80</Address>
+      <Offsets>
+        <Offset>7752B4</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>50</ID>
+      <Description>"Sepith"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>ao.exe+4EFC80</Address>
+      <Offsets>
+        <Offset>7752C4</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>49</ID>
+          <Description>"Earth"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>51</ID>
+          <Description>"Water"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*1</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>52</ID>
+          <Description>"Fire"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*2</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>53</ID>
+          <Description>"Wind"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*3</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>54</ID>
+          <Description>"Time"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>55</ID>
+          <Description>"Space"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*5</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>56</ID>
+          <Description>"Mirage"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*6</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>67</ID>
+      <Description>"Bonding Points"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>ao.exe+4EFC80</Address>
+      <Offsets>
+        <Offset>776E84</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>66</ID>
+          <Description>"KeA"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>78</ID>
+          <Description>"Elie"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+1</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>72</ID>
+          <Description>"Tio"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+2</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>73</ID>
+          <Description>"Randy"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+3</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>74</ID>
+          <Description>"Noel"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>75</ID>
+          <Description>"Wazy"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+5</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>76</ID>
+          <Description>"Rixia"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+6</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>77</ID>
+          <Description>"Dudley"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+7</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>80</ID>
+          <Description>"Ilya"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>81</ID>
+          <Description>"Cecile"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+9</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>79</ID>
+          <Description>"Fran"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+A</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>82</ID>
+          <Description>"Sully"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+B</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>43</ID>
+      <Description>"Combat Record"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>ao.exe+4EFC80</Address>
+      <Offsets>
+        <Offset>7770D4</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>44</ID>
+          <Description>"Total Battles Fought"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>45</ID>
+          <Description>"Victories"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>47</ID>
+          <Description>"S-Breaks Used"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>46</ID>
+          <Description>"Enemies Slain"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+14</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>87</ID>
+          <Description>"Burst"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+16</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>92</ID>
+          <Description>"Arts/Crafts Canceled"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+18</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>112</ID>
+      <Description>"ohko"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : ao.exe
+  Version:
+  Date   :
+  Author :
+
+  This script does blah blah blah
+}
+
+define(address,"ao.exe"+17F71D)
+define(bytes,89 8A 78 02 00 00)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"ao.exe"+17F71D)
+
+label(code)
+label(return)
+
+newmem:
+  cmp byte ptr [rdx+A],FF
+  jne alternate
+code:
+  mov [rdx+00000278],ecx
+  jmp return
+alternate:
+  mov [rdx+00000278],0
+  jmp return
+
+address:
+  jmp newmem
+  nop
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // mov [rdx+00000278],ecx
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: ao.exe+17F71D
+
+ao.exe+17F6FA: 44 8B B2 78 02 00 00  - mov r14d,[rdx+00000278]
+ao.exe+17F701: 48 8B F9              - mov rdi,rcx
+ao.exe+17F704: 33 C0                 - xor eax,eax
+ao.exe+17F706: 48 89 5C 24 50        - mov [rsp+50],rbx
+ao.exe+17F70B: 41 8B CE              - mov ecx,r14d
+ao.exe+17F70E: 45 8B F8              - mov r15d,r8d
+ao.exe+17F711: 41 2B C8              - sub ecx,r8d
+ao.exe+17F714: 48 8B DA              - mov rbx,rdx
+ao.exe+17F717: 45 3B F0              - cmp r14d,r8d
+ao.exe+17F71A: 0F 46 C8              - cmovbe ecx,eax
+// ---------- INJECTING HERE ----------
+ao.exe+17F71D: 89 8A 78 02 00 00     - mov [rdx+00000278],ecx
+// ---------- DONE INJECTING  ----------
+ao.exe+17F723: F6 42 04 08           - test byte ptr [rdx+04],08
+ao.exe+17F727: 74 18                 - je ao.exe+17F741
+ao.exe+17F729: B8 CD CC CC CC        - mov eax,CCCCCCCD
+ao.exe+17F72E: F7 A2 74 02 00 00     - mul [rdx+00000274]
+ao.exe+17F734: C1 EA 03              - shr edx,03
+ao.exe+17F737: 3B CA                 - cmp ecx,edx
+ao.exe+17F739: 73 06                 - jae ao.exe+17F741
+ao.exe+17F73B: 89 93 78 02 00 00     - mov [rbx+00000278],edx
+ao.exe+17F741: 0F B7 43 0A           - movzx eax,word ptr [rbx+0A]
+ao.exe+17F745: 48 8B 97 F0 C2 03 00  - mov rdx,[rdi+0003C2F0]
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"Invincible"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : ao.exe
+  Version:
+  Date   :
+  Author :
+
+  This script does blah blah blah
+}
+
+define(address,"ao.exe"+17F71D)
+define(bytes,89 8A 78 02 00 00)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"ao.exe"+17F71D)
+
+label(code)
+label(return)
+
+newmem:
+  cmp byte ptr [rdx+A],FF
+  jne return
+code:
+  mov [rdx+00000278],ecx
+  jmp return
+
+address:
+  jmp newmem
+  nop
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // mov [rdx+00000278],ecx
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: ao.exe+17F71D
+
+ao.exe+17F6FA: 44 8B B2 78 02 00 00  - mov r14d,[rdx+00000278]
+ao.exe+17F701: 48 8B F9              - mov rdi,rcx
+ao.exe+17F704: 33 C0                 - xor eax,eax
+ao.exe+17F706: 48 89 5C 24 50        - mov [rsp+50],rbx
+ao.exe+17F70B: 41 8B CE              - mov ecx,r14d
+ao.exe+17F70E: 45 8B F8              - mov r15d,r8d
+ao.exe+17F711: 41 2B C8              - sub ecx,r8d
+ao.exe+17F714: 48 8B DA              - mov rbx,rdx
+ao.exe+17F717: 45 3B F0              - cmp r14d,r8d
+ao.exe+17F71A: 0F 46 C8              - cmovbe ecx,eax
+// ---------- INJECTING HERE ----------
+ao.exe+17F71D: 89 8A 78 02 00 00     - mov [rdx+00000278],ecx
+// ---------- DONE INJECTING  ----------
+ao.exe+17F723: F6 42 04 08           - test byte ptr [rdx+04],08
+ao.exe+17F727: 74 18                 - je ao.exe+17F741
+ao.exe+17F729: B8 CD CC CC CC        - mov eax,CCCCCCCD
+ao.exe+17F72E: F7 A2 74 02 00 00     - mul [rdx+00000274]
+ao.exe+17F734: C1 EA 03              - shr edx,03
+ao.exe+17F737: 3B CA                 - cmp ecx,edx
+ao.exe+17F739: 73 06                 - jae ao.exe+17F741
+ao.exe+17F73B: 89 93 78 02 00 00     - mov [rbx+00000278],edx
+ao.exe+17F741: 0F B7 43 0A           - movzx eax,word ptr [rbx+0A]
+ao.exe+17F745: 48 8B 97 F0 C2 03 00  - mov rdx,[rdi+0003C2F0]
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"Cloak"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : ao.exe
+  Version: 
+  Date   : 2023-10-15
+  Author : ryanj
+
+  This script does blah blah blah
+}
+
+define(address,"ao.exe"+2696EA)
+define(bytes,0F 85 93 02 00 00)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"ao.exe"+2696EA)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  jmp ao.exe+269983
+
+address:
+  jmp newmem
+  nop
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // jne ao.exe+269983
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: ao.exe+2696EA
+
+ao.exe+2696BB: 48 C1 E8 3F              - shr rax,3F
+ao.exe+2696BF: 48 03 D0                 - add rdx,rax
+ao.exe+2696C2: 4C 69 C2 90 01 00 00     - imul r8,rdx,00000190
+ao.exe+2696C9: 4C 03 C5                 - add r8,rbp
+ao.exe+2696CC: 41 0F B7 80 70 01 00 00  - movzx eax,word ptr [r8+00000170]
+ao.exe+2696D4: 84 C0                    - test al,al
+ao.exe+2696D6: 0F 88 A7 02 00 00        - js ao.exe+269983
+ao.exe+2696DC: 66 85 CE                 - test si,cx
+ao.exe+2696DF: 0F 84 9E 02 00 00        - je ao.exe+269983
+ao.exe+2696E5: 66 41 83 3E 00           - cmp word ptr [r14],00
+// ---------- INJECTING HERE ----------
+ao.exe+2696EA: 0F 85 93 02 00 00        - jne ao.exe+269983
+// ---------- DONE INJECTING  ----------
+ao.exe+2696F0: A8 88                    - test al,-78
+ao.exe+2696F2: 0F 85 8B 02 00 00        - jne ao.exe+269983
+ao.exe+2696F8: 66 45 85 8E A2 02 00 00  - test [r14+000002A2],r9w
+ao.exe+269700: 0F 85 7D 02 00 00        - jne ao.exe+269983
+ao.exe+269706: 44 8B CF                 - mov r9d,edi
+ao.exe+269709: 48 8B F7                 - mov rsi,rdi
+ao.exe+26970C: 84 DB                    - test bl,bl
+ao.exe+26970E: BF 01 00 00 00           - mov edi,00000001
+ao.exe+269713: B8 08 00 00 00           - mov eax,00000008
+ao.exe+269718: 0F 45 F8                 - cmovne edi,eax
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Infinite Items"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : ao.exe
+  Version:
+  Date   :
+  Author :
+
+  This script does blah blah blah
+}
+
+define(address,"ao.exe"+29EAB1)
+define(bytes,0F B7 82 6A 1D 77 00)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"ao.exe"+29EAB1)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  mov eax,#70
+  jmp return
+
+address:
+  jmp newmem
+  nop 2
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // movzx eax,word ptr [rdx+00771D6A]
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: ao.exe+29EAB1
+
+ao.exe+29EA9A: CC                       - int 3 
+ao.exe+29EA9B: CC                       - int 3 
+ao.exe+29EA9C: CC                       - int 3 
+ao.exe+29EA9D: CC                       - int 3 
+ao.exe+29EA9E: CC                       - int 3 
+ao.exe+29EA9F: CC                       - int 3 
+ao.exe+29EAA0: 4C 8B 0D D9 11 25 00     - mov r9,[ao.exe+4EFC80]
+ao.exe+29EAA7: 4C 63 D2                 - movsxd  r10,edx
+ao.exe+29EAAA: 49 8B CA                 - mov rcx,r10
+ao.exe+29EAAD: 4B 8D 14 91              - lea rdx,[r9+r10*4]
+// ---------- INJECTING HERE ----------
+ao.exe+29EAB1: 0F B7 82 6A 1D 77 00     - movzx eax,word ptr [rdx+00771D6A]
+// ---------- DONE INJECTING  ----------
+ao.exe+29EAB8: 41 3B C0                 - cmp eax,r8d
+ao.exe+29EABB: 7E 11                    - jle ao.exe+29EACE
+ao.exe+29EABD: 66 41 2B C0              - sub ax,r8w
+ao.exe+29EAC1: 66 89 82 6A 1D 77 00     - mov [rdx+00771D6A],ax
+ao.exe+29EAC8: B8 01 00 00 00           - mov eax,00000001
+ao.exe+29EACD: C3                       - ret 
+ao.exe+29EACE: 75 78                    - jne ao.exe+29EB48
+ao.exe+29EAD0: 48 81 F9 77 06 00 00     - cmp rcx,00000677
+ao.exe+29EAD7: 7D 4C                    - jnl ao.exe+29EB25
+ao.exe+29EAD9: 4E 8D 04 95 68 1D 77 00  - lea r8,[r10*4+00771D68]
+}
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
