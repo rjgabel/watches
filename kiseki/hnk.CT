@@ -1,0 +1,1961 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>22</ID>
+      <Description>"Position"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>hnk.exe+E8C5E8</Address>
+      <Offsets>
+        <Offset>380</Offset>
+        <Offset>185A8</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>25</ID>
+          <Description>"X"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>26</ID>
+          <Description>"Y"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>27</ID>
+          <Description>"Z"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>186</ID>
+          <Description>"Current Map"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>6</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>hnk.exe+E8CE4C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>187</ID>
+          <Description>"Next Map"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>6</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>hnk.exe+E8CE54</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>175</ID>
+          <Description>"Map Breakpoint"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>{$lua}
+if syntaxcheck then return end
+--if memrec then print(memrec.Description) end
+[ENABLE]
+debug_setBreakpoint("hnk.exe+33B9CF")
+[DISABLE]
+debug_removeBreakpoint("hnk.exe+33B9CF")
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>92</ID>
+      <Description>"Camera"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>hnk.exe+E87060</Address>
+      <Offsets>
+        <Offset>B40</Offset>
+        <Offset>1DA8</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>91</ID>
+          <Description>"X"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>93</ID>
+          <Description>"Y"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>94</ID>
+          <Description>"Z"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>95</ID>
+          <Description>"Camera Hack"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>define(address1,"hnk.exe"+1E95E7)
+define(bytes1,0F 11 83 30 0B 00 00)
+
+define(address2,"hnk.exe"+1EF0DC)
+define(bytes2,0F 11 81 30 0B 00 00)
+
+define(address3,"hnk.exe"+1EF480)
+define(bytes3,0F 11 81 30 0B 00 00)
+
+[ENABLE]
+assert(address1,bytes1)
+assert(address2,bytes2)
+assert(address3,bytes3)
+alloc(newmem,$1000,"hnk.exe"+1EF480)
+
+label(code)
+label(return)
+label(temp)
+
+newmem:
+code:
+  push rax
+  mov eax,[[[hnk.exe+E8C5E8]+185A8]+380]
+  mov [[[hnk.exe+E87060]+1DA8]+B40],eax
+  mov eax,[[[hnk.exe+E8C5E8]+185A8]+388]
+  mov [[[hnk.exe+E87060]+1DA8]+B48],eax
+  //mov eax,[[[hnk.exe+E8C5E8]+185A8]+384]
+  //mov [[[hnk.exe+E87060]+1DA8]+B44],eax
+  pop rax
+  jmp return
+temp:
+  dq 0
+  dq 0
+one:
+  dq 10000.0
+
+address1:
+  nop 7
+
+address2:
+  nop 7
+
+address3:
+  jmp newmem
+  nop 2
+return:
+
+[DISABLE]
+address1:
+  db bytes1
+  // movups [rbx+00000B30],xmm0
+
+address2:
+  db bytes2
+  // movups [rcx+00000B30],xmm0
+
+address3:
+  db bytes3
+  // movups [rcx+00000B30],xmm0
+
+dealloc(newmem)
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Textbox Name"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>String</VariableType>
+      <Length>59</Length>
+      <Unicode>0</Unicode>
+      <CodePage>0</CodePage>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>hnk.exe+147A8A0</Address>
+      <Offsets>
+        <Offset>840</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>12</ID>
+      <Description>"Party"</Description>
+      <Options moHideChildren="1"/>
+      <DropDownList DisplayValueAsItem="1">0:Rean
+1:Alisa
+2:Elliot
+3:Laura
+4:Machias
+5:Emma
+6:Jusis
+7:Fie
+8:Gaius
+9:Millium
+10:Juna
+11:Kurt
+12:Altina
+13:Musse
+14:Ash
+15:Sara
+16:Aurelia
+17:Agate
+18:Angelica
+19:Olivier
+20:Tita
+21:Tio
+22:Sharon
+23:Crow
+24:Vita
+25:Toval
+26:Estelle
+27:Joshua
+28:Renne
+29:Lloyd
+30:Elie
+31:Randy
+32:Roselia
+33:George
+34:Victor S. Arseid
+35:Duvalie
+36:Celine
+37:Towa
+38:Elise
+39:Alfin
+40:Noel
+41:Wazy
+42:Rixia
+43:Arios
+44:Rufus
+45:Lapis
+46:Swin
+47:Nadia
+48:Claire
+49:Lechter
+50:McBurn
+</DropDownList>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>hnk.exe+E8A6F8</Address>
+      <Offsets>
+        <Offset>0</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>185</ID>
+          <Description>"Leader"</Description>
+          <DropDownListLink>Party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>hnk.exe+E8C5E8</Address>
+          <Offsets>
+            <Offset>6CA70</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>11</ID>
+          <Description>"Size"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>hnk.exe+E8A6F0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>47</ID>
+          <Description>"1"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14</ID>
+          <Description>"2"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*1</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>15</ID>
+          <Description>"3"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*2</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>16</ID>
+          <Description>"4"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*3</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>76</ID>
+          <Description>"5"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>77</ID>
+          <Description>"6"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*5</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>78</ID>
+          <Description>"7"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*6</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>96</ID>
+          <Description>"8"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*7</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>97</ID>
+          <Description>"9"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>98</ID>
+          <Description>"10"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*9</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>99</ID>
+          <Description>"11"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$10</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>100</ID>
+          <Description>"12"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$11</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>101</ID>
+          <Description>"13"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$12</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>102</ID>
+          <Description>"14"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$13</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>103</ID>
+          <Description>"15"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$14</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>106</ID>
+          <Description>"16"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$15</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>115</ID>
+          <Description>"17"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$16</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>116</ID>
+          <Description>"18"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$17</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>117</ID>
+          <Description>"19"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$18</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>118</ID>
+          <Description>"20"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$19</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>119</ID>
+          <Description>"21"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$20</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>120</ID>
+          <Description>"22"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$21</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>121</ID>
+          <Description>"23"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$22</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>122</ID>
+          <Description>"24"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$23</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>123</ID>
+          <Description>"25"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$24</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>124</ID>
+          <Description>"26"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$25</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>125</ID>
+          <Description>"27"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$26</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>126</ID>
+          <Description>"28"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$27</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>127</ID>
+          <Description>"29"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$28</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>130</ID>
+          <Description>"30"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$29</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>147</ID>
+          <Description>"31"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$30</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>148</ID>
+          <Description>"32"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$31</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>152</ID>
+          <Description>"33"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$32</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>153</ID>
+          <Description>"34"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$33</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>154</ID>
+          <Description>"35"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$34</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>155</ID>
+          <Description>"36"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$35</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>156</ID>
+          <Description>"37"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$36</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>157</ID>
+          <Description>"38"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$37</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>158</ID>
+          <Description>"39"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$38</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>159</ID>
+          <Description>"40"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$39</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>160</ID>
+          <Description>"41"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$40</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>161</ID>
+          <Description>"42"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$41</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>167</ID>
+          <Description>"43"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$42</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>168</ID>
+          <Description>"44"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$43</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>173</ID>
+          <Description>"45"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$44</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>174</ID>
+          <Description>"46"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$45</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>177</ID>
+          <Description>"47"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$46</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>178</ID>
+          <Description>"48"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$47</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>179</ID>
+          <Description>"49"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$48</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>180</ID>
+          <Description>"50"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$49</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>181</ID>
+          <Description>"51"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*$50</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>46</ID>
+          <Description>"Link EXP"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>{$lua}
+if syntaxcheck then return end
+--if memrec then print(memrec.Description) end
+[ENABLE]
+local max_party = 50
+local party_size = readInteger("hnk.exe+E8A6F0")
+local party_ptr = readPointer("hnk.exe+E8A6F8")
+if party_ptr == 0 then
+  return nil
+end
+local party = {}
+for i=0,party_size-1 do
+  party[i] = readSmallInteger(party_ptr+2*i)
+end
+local link_exp_ptr = readPointer("hnk.exe+1627768")
+for i=0,party_size-1 do
+  for j=0,party_size-1 do
+    if (i ~= j) and (party[i] &lt;= max_party) and (party[j] &lt;= max_party) then
+      -- Link Level
+      writeBytes(link_exp_ptr+0x40*party[i]+party[j],7)
+      -- Link EXP
+      writeInteger(link_exp_ptr+0x100*party[i]+0x4*party[j]+0x1000,9999)
+    end
+  end
+end
+[DISABLE]
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>32</ID>
+      <Description>"Stats"</Description>
+      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+alloc(CurPartyMember, 0x8)
+registerSymbol(CurPartyMember)
+
+[DISABLE]
+unregisterSymbol(CurPartyMember)
+dealloc(CurPartyMember)
+
+</AssemblerScript>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>33</ID>
+          <Description>"Character"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>8 Bytes</VariableType>
+          <Address>CurPartyMember</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>34</ID>
+          <Description>"EXP"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>hnk.exe+163D4C8+50*[CurPartyMember]</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>35</ID>
+          <Description>"Level"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>hnk.exe+163D4CC+50*[CurPartyMember]</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>58</ID>
+          <Description>"Extra HP"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>hnk.exe+163E88C+14*[CurPartyMember]</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>60</ID>
+          <Description>"Extra STR"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>hnk.exe+163E890+14*[CurPartyMember]</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>61</ID>
+          <Description>"Extra DEF"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>hnk.exe+163E892+14*[CurPartyMember]</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>62</ID>
+          <Description>"Extra ATS"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>hnk.exe+163E894+14*[CurPartyMember]</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>63</ID>
+          <Description>"Extra ADF"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>hnk.exe+163E896+14*[CurPartyMember]</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>48</ID>
+      <Description>"Master Quartz"</Description>
+      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+alloc(CurMasterQuartz, 0x8)
+registerSymbol(CurMasterQuartz)
+
+[DISABLE]
+unregisterSymbol(CurMasterQuartz)
+dealloc(CurMasterQuartz)
+
+</AssemblerScript>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>49</ID>
+          <Description>"Selected MQ"</Description>
+          <DropDownList DisplayValueAsItem="1">3601:Brave
+3571:Skuld
+3589:Aegis
+3592:Minotauros
+3602:Talisman
+3619:Infinity
+3620:Geo Sophia
+3603:Andvari
+3574:Canon
+3585:Virgo
+3595:Magius
+3615:Blue Leo
+3617:Elixir
+3624:Cait Sith
+3613:Arc Diva
+3604:Mercurius
+3570:Brigid
+3575:Regulus
+3591:Beowulf
+3596:Chevalier
+3625:Vega
+3635:Morgan
+3640:Balor
+3605:Reginleif
+3572:Sirius
+3588:Tempest
+3590:Thor
+3614:El Canon
+3637:Kusanagi
+3627:Cherub
+3622:Pixie
+3606:Takemikazuchi
+3573:Deva
+3576:Zephyr
+3584:Katze
+3597:Gungnir
+3600:Woden
+3583:Gloom
+3612:Subaru
+3611:Altair
+3579:Moebius
+3580:Sophia
+3587:Dunamis
+3594:Emblem
+3599:Valhalla
+3631:Caliburn
+3610:Soleil
+3616:Mistral
+3582:Titania
+3586:Scorpio
+3593:Pandora
+3598:Erda
+3581:Keeper
+3577:Kaleido
+3623:Murakumo
+3607:Jaldabaoth
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>8 Bytes</VariableType>
+          <Address>CurMasterQuartz</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>54</ID>
+          <Description>"Level"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>hnk.exe+16369F0+10*[CurMasterQuartz]</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>55</ID>
+          <Description>"EXP"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>hnk.exe+16369F4+10*[CurMasterQuartz]</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>87</ID>
+          <Description>"Breakpoint"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>{$lua}
+if syntaxcheck then return end
+--if memrec then print(memrec.Description) end
+[ENABLE]
+function debugger_onBreakpoint()
+  writeToClipboard(R8)
+end
+debug_setBreakpoint("hnk.exe+6A3296")
+[DISABLE]
+debugger_onBreakpoint=nil
+debug_removeBreakpoint("hnk.exe+6A3296")
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>139</ID>
+      <Description>"Tickets"</Description>
+      <VariableType>Byte</VariableType>
+      <Address>hnk.exe+E8E774</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>66</ID>
+      <Description>"Sepith"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>hnk.exe+163D3B8</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>65</ID>
+          <Description>"Earth"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>67</ID>
+          <Description>"Water"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*1</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>68</ID>
+          <Description>"Fire"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*2</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>69</ID>
+          <Description>"Wind"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*3</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>70</ID>
+          <Description>"Time"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>71</ID>
+          <Description>"Space"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*5</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>72</ID>
+          <Description>"Mirage"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*6</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>73</ID>
+          <Description>"Mass"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*7</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>64</ID>
+      <Description>"Mira"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>hnk.exe+163D458</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>81</ID>
+      <Description>"Assault Gauge"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>hnk.exe+163D484</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>89</ID>
+          <Description>"Rean"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>38</ID>
+          <Description>"Lloyd"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>79</ID>
+          <Description>"Rufus"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>80</ID>
+          <Description>"Current Route?"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>hnk.exe+e87060</Address>
+          <Offsets>
+            <Offset>407C</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>82</ID>
+      <Description>"Brave Points"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>hnk.exe+1645849</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>88</ID>
+          <Description>"Rean"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>83</ID>
+          <Description>"Lloyd"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+1</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>57</ID>
+          <Description>"Rufus"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+2</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>133</ID>
+      <Description>"Statistics"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>172</ID>
+          <Description>"Weapons Enhanced"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>hnk.exe+E8E9C0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>132</ID>
+          <Description>"Void Spires"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>hnk.exe+E8EA5C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>151</ID>
+          <Description>"Formidable Foes"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>hnk.exe+E8EA60</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>146</ID>
+              <Description>"Lloyd"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>150</ID>
+              <Description>"Rean"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>149</ID>
+              <Description>"Rufus"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>135</ID>
+          <Description>"Battles"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>hnk.exe+164E46C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>137</ID>
+          <Description>"Victories"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>hnk.exe+164E470</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>136</ID>
+          <Description>"Enemies Slain"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>hnk.exe+164E480</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>138</ID>
+          <Description>"United Heals"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>hnk.exe+164E4B4</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>110</ID>
+      <Description>"Minigames"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>109</ID>
+          <Description>"Vantage Masters"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>define(address,"hnk.exe"+45C19A)
+define(bytes,41 0F B7 81 7C 03 00 00)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"hnk.exe"+45C19A)
+
+label(code)
+label(return)
+
+newmem:
+  mov eax,0
+  mov word ptr [r9+0000037C],0
+code:
+  movzx eax,word ptr [r9+0000037C]
+  jmp return
+
+address:
+  jmp newmem
+  nop 3
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // movzx eax,word ptr [r9+0000037C]
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: 14045C19A
+
+14045C170: 41 0F B7 C0              - movzx eax,r8w
+14045C174: 4D 8B 0C C2              - mov r9,[r10+rax*8]
+14045C178: 49 8B 81 68 03 00 00     - mov rax,[r9+00000368]
+14045C17F: 66 83 78 02 02           - cmp word ptr [rax+02],02
+14045C184: 74 0D                    - je 14045C193
+14045C186: 66 41 FF C0              - inc r8w
+14045C18A: 66 41 83 F8 07           - cmp r8w,07
+14045C18F: 72 DF                    - jb 14045C170
+14045C191: EB 25                    - jmp 14045C1B8
+14045C193: 80 B9 E6 06 00 00 2E     - cmp byte ptr [rcx+000006E6],2E
+// ---------- INJECTING HERE ----------
+14045C19A: 41 0F B7 81 7C 03 00 00  - movzx eax,word ptr [r9+0000037C]
+// ---------- DONE INJECTING  ----------
+14045C1A2: 66 89 81 EA 06 00 00     - mov [rcx+000006EA],ax
+14045C1A9: 75 0D                    - jne 14045C1B8
+14045C1AB: 66 83 F8 0A              - cmp ax,0A
+14045C1AF: 0F 9E C0                 - setle al
+14045C1B2: 88 81 15 08 00 00        - mov [rcx+00000815],al
+14045C1B8: 4C 8B 89 68 01 00 00     - mov r9,[rcx+00000168]
+14045C1BF: 90                       - nop 
+14045C1C0: 0F B7 C2                 - movzx eax,dx
+14045C1C3: 4D 8B 04 C1              - mov r8,[r9+rax*8]
+14045C1C7: 49 8B 80 68 03 00 00     - mov rax,[r8+00000368]
+}
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>112</ID>
+          <Description>"Magical Alisa"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>define(address,"hnk.exe"+501DB0)
+define(bytes,44 39 A0 98 00 00 00)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"hnk.exe"+501DB0)
+
+label(code)
+label(return)
+
+newmem:
+  mov [rax+00000098],#1000
+code:
+  cmp [rax+00000098],r12d
+  jmp return
+
+address:
+  jmp newmem
+  nop 2
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // cmp [rax+00000098],r12d
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: hnk.exe+501DB0
+
+hnk.exe+501D79: FF 90 C8 01 00 00        - call qword ptr [rax+000001C8]
+hnk.exe+501D7F: E9 EC 00 00 00           - jmp hnk.exe+501E70
+hnk.exe+501D84: FF 90 D0 01 00 00        - call qword ptr [rax+000001D0]
+hnk.exe+501D8A: 48 8B 0B                 - mov rcx,[rbx]
+hnk.exe+501D8D: 44 89 64 24 30           - mov [rsp+30],r12d
+hnk.exe+501D92: F3 0F 11 74 24 28        - movss [rsp+28],xmm6
+hnk.exe+501D98: F3 0F 11 7C 24 20        - movss [rsp+20],xmm7
+hnk.exe+501D9E: 48 8B 01                 - mov rax,[rcx]
+hnk.exe+501DA1: 48 8B 90 88 01 00 00     - mov rdx,[rax+00000188]
+hnk.exe+501DA8: 49 8B 84 1E F0 FC FF FF  - mov rax,[r14+rbx-00000310]
+// ---------- INJECTING HERE ----------
+hnk.exe+501DB0: 44 39 A0 98 00 00 00     - cmp [rax+00000098],r12d
+// ---------- DONE INJECTING  ----------
+hnk.exe+501DB7: 75 0E                    - jne hnk.exe+501DC7
+hnk.exe+501DB9: 41 0F 28 D9              - movaps xmm3,xmm9
+hnk.exe+501DBD: 41 0F 28 D1              - movaps xmm2,xmm9
+hnk.exe+501DC1: 41 0F 28 CF              - movaps xmm1,xmm15
+hnk.exe+501DC5: EB 09                    - jmp hnk.exe+501DD0
+hnk.exe+501DC7: 0F 28 DF                 - movaps xmm3,xmm7
+hnk.exe+501DCA: 0F 28 D7                 - movaps xmm2,xmm7
+hnk.exe+501DCD: 0F 28 CF                 - movaps xmm1,xmm7
+hnk.exe+501DD0: FF D2                    - call rdx
+hnk.exe+501DD2: 49 8B 84 1E F0 FC FF FF  - mov rax,[r14+rbx-00000310]
+}
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>114</ID>
+          <Description>"Pom Pom Party"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>define(address,"hnk.exe"+433D04)
+define(bytes,83 B9 44 8C 00 00 64)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"hnk.exe"+433D04)
+
+label(code)
+label(return)
+
+newmem:
+  mov dword ptr [rcx+00008C44],#999
+code:
+  cmp dword ptr [rcx+00008C44],64
+  jmp return
+
+address:
+  jmp newmem
+  nop 2
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // cmp dword ptr [rcx+00008C44],64
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: hnk.exe+433D04
+
+hnk.exe+433CD3: 0F 29 B4 24 80 00 00 00     - movaps [rsp+00000080],xmm6
+hnk.exe+433CDB: 45 33 ED                    - xor r13d,r13d
+hnk.exe+433CDE: 44 0F 29 44 24 60           - movaps [rsp+60],xmm8
+hnk.exe+433CE4: 48 8B D9                    - mov rbx,rcx
+hnk.exe+433CE7: F3 44 0F 10 05 DC 36 84 00  - movss xmm8,[hnk.exe+C773CC]
+hnk.exe+433CF0: 0F 57 F6                    - xorps xmm6,xmm6
+hnk.exe+433CF3: 85 C0                       - test eax,eax
+hnk.exe+433CF5: 0F 84 5E 03 00 00           - je hnk.exe+434059
+hnk.exe+433CFB: 83 F8 06                    - cmp eax,06
+hnk.exe+433CFE: 0F 84 55 03 00 00           - je hnk.exe+434059
+// ---------- INJECTING HERE ----------
+hnk.exe+433D04: 83 B9 44 8C 00 00 64        - cmp dword ptr [rcx+00008C44],64
+// ---------- DONE INJECTING  ----------
+hnk.exe+433D0B: 0F 8C 48 03 00 00           - jl hnk.exe+434059
+hnk.exe+433D11: 83 B9 48 8C 00 00 64        - cmp dword ptr [rcx+00008C48],64
+hnk.exe+433D18: 0F 8C 3B 03 00 00           - jl hnk.exe+434059
+hnk.exe+433D1E: 48 8B 41 10                 - mov rax,[rcx+10]
+hnk.exe+433D22: 44 39 A8 14 0A 00 00        - cmp [rax+00000A14],r13d
+hnk.exe+433D29: 0F 85 2A 03 00 00           - jne hnk.exe+434059
+hnk.exe+433D2F: E8 7C EF 42 00              - call hnk.exe+862CB0
+hnk.exe+433D34: 41 8D 55 21                 - lea edx,[r13+21]
+hnk.exe+433D38: 48 8B C8                    - mov rcx,rax
+hnk.exe+433D3B: 45 8D 45 02                 - lea r8d,[r13+02]
+}
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>144</ID>
+          <Description>"Banana Boat"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>hnk.exe+165A1B8</Address>
+          <Offsets>
+            <Offset>450</Offset>
+            <Offset>18</Offset>
+          </Offsets>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>143</ID>
+              <Description>"1"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>145</ID>
+              <Description>"2"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>171</ID>
+          <Description>"Horror Coaster"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>hnk.exe+165A1B0</Address>
+          <Offsets>
+            <Offset>1C</Offset>
+            <Offset>58</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>176</ID>
+      <Description>"Misc"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>166</ID>
+          <Description>"Infinite HP"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>define(address,"hnk.exe"+1DA18E)
+define(bytes,F6 80 20 04 00 00 01)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"hnk.exe"+1DA18E)
+
+label(code)
+label(return)
+
+newmem:
+  mov [temp_rbx],rbx
+  mov ebx,[rax+428]
+  mov [rax+424],ebx
+  mov rbx,[temp_rbx]
+code:
+  test byte ptr [rax+00000420],01
+  jmp return
+temp_rbx:
+  dq 0
+
+address:
+  jmp newmem
+  nop 2
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // test byte ptr [rax+00000420],01
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: hnk.exe+1DA18E
+
+hnk.exe+1DA160: 48 83 C3 08              - add rbx,08
+hnk.exe+1DA164: 48 8B 08                 - mov rcx,[rax]
+hnk.exe+1DA167: 48 89 4C 24 30           - mov [rsp+30],rcx
+hnk.exe+1DA16C: 48 89 4C 24 38           - mov [rsp+38],rcx
+hnk.exe+1DA171: 66 0F 70 44 24 30 00     - pshufd xmm0,[rsp+30]00
+hnk.exe+1DA178: F3 41 0F 5C C1           - subss xmm0,xmm9
+hnk.exe+1DA17D: F3 0F 58 F0              - addss xmm6,xmm0
+hnk.exe+1DA181: 48 83 EF 01              - sub rdi,01
+hnk.exe+1DA185: 75 AB                    - jne hnk.exe+1DA132
+hnk.exe+1DA187: 48 8B 86 D0 0A 00 00     - mov rax,[rsi+00000AD0]
+// ---------- INJECTING HERE ----------
+hnk.exe+1DA18E: F6 80 20 04 00 00 01     - test byte ptr [rax+00000420],01
+// ---------- DONE INJECTING  ----------
+hnk.exe+1DA195: 0F 84 8F 00 00 00        - je hnk.exe+1DA22A
+hnk.exe+1DA19B: 48 8B 8E 58 1B 00 00     - mov rcx,[rsi+00001B58]
+hnk.exe+1DA1A2: 4C 8D 84 24 E8 00 00 00  - lea r8,[rsp+000000E8]
+hnk.exe+1DA1AA: 48 8D 94 24 E0 00 00 00  - lea rdx,[rsp+000000E0]
+hnk.exe+1DA1B2: 89 AC 24 E0 00 00 00     - mov [rsp+000000E0],ebp
+hnk.exe+1DA1B9: E8 22 00 49 00           - call hnk.exe+66A1E0
+hnk.exe+1DA1BE: F3 0F 6F 86 90 00 00 00  - movdqu xmm0,[rsi+00000090]
+hnk.exe+1DA1C6: 41 0F 28 D8              - movaps xmm3,xmm8
+hnk.exe+1DA1CA: 48 8B 8E 58 1B 00 00     - mov rcx,[rsi+00001B58]
+hnk.exe+1DA1D1: 66 0F 70 C8 00           - pshufd xmm1,xmm000
+}
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>182</ID>
+          <Description>"One HP"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>define(address,"hnk.exe"+1DA18E)
+define(bytes,F6 80 20 04 00 00 01)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"hnk.exe"+1DA18E)
+
+label(code)
+label(return)
+
+newmem:
+  mov [temp_rbx],rbx
+  mov ebx,1
+  mov [rax+424],ebx
+  mov rbx,[temp_rbx]
+code:
+  test byte ptr [rax+00000420],01
+  jmp return
+temp_rbx:
+  dq 0
+
+address:
+  jmp newmem
+  nop 2
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // test byte ptr [rax+00000420],01
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: hnk.exe+1DA18E
+
+hnk.exe+1DA160: 48 83 C3 08              - add rbx,08
+hnk.exe+1DA164: 48 8B 08                 - mov rcx,[rax]
+hnk.exe+1DA167: 48 89 4C 24 30           - mov [rsp+30],rcx
+hnk.exe+1DA16C: 48 89 4C 24 38           - mov [rsp+38],rcx
+hnk.exe+1DA171: 66 0F 70 44 24 30 00     - pshufd xmm0,[rsp+30]00
+hnk.exe+1DA178: F3 41 0F 5C C1           - subss xmm0,xmm9
+hnk.exe+1DA17D: F3 0F 58 F0              - addss xmm6,xmm0
+hnk.exe+1DA181: 48 83 EF 01              - sub rdi,01
+hnk.exe+1DA185: 75 AB                    - jne hnk.exe+1DA132
+hnk.exe+1DA187: 48 8B 86 D0 0A 00 00     - mov rax,[rsi+00000AD0]
+// ---------- INJECTING HERE ----------
+hnk.exe+1DA18E: F6 80 20 04 00 00 01     - test byte ptr [rax+00000420],01
+// ---------- DONE INJECTING  ----------
+hnk.exe+1DA195: 0F 84 8F 00 00 00        - je hnk.exe+1DA22A
+hnk.exe+1DA19B: 48 8B 8E 58 1B 00 00     - mov rcx,[rsi+00001B58]
+hnk.exe+1DA1A2: 4C 8D 84 24 E8 00 00 00  - lea r8,[rsp+000000E8]
+hnk.exe+1DA1AA: 48 8D 94 24 E0 00 00 00  - lea rdx,[rsp+000000E0]
+hnk.exe+1DA1B2: 89 AC 24 E0 00 00 00     - mov [rsp+000000E0],ebp
+hnk.exe+1DA1B9: E8 22 00 49 00           - call hnk.exe+66A1E0
+hnk.exe+1DA1BE: F3 0F 6F 86 90 00 00 00  - movdqu xmm0,[rsi+00000090]
+hnk.exe+1DA1C6: 41 0F 28 D8              - movaps xmm3,xmm8
+hnk.exe+1DA1CA: 48 8B 8E 58 1B 00 00     - mov rcx,[rsi+00001B58]
+hnk.exe+1DA1D1: 66 0F 70 C8 00           - pshufd xmm1,xmm000
+}
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>189</ID>
+          <Description>"OHKO"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>define(address,"hnk.exe"+EF6C7)
+define(bytes,45 89 8E 24 04 00 00)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"hnk.exe"+EF6C7)
+
+label(code)
+label(return)
+
+newmem:
+  mov r9d,0
+code:
+  mov [r14+00000424],r9d
+  jmp return
+
+address:
+  jmp newmem
+  nop 2
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // mov [r14+00000424],r9d
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: hnk.exe+EF6C7
+
+hnk.exe+EF698: C1 EA 05                 - shr edx,05
+hnk.exe+EF69B: 44 03 CA                 - add r9d,edx
+hnk.exe+EF69E: 48 8B BC 24 A0 00 00 00  - mov rdi,[rsp+000000A0]
+hnk.exe+EF6A6: 45 2B D7                 - sub r10d,r15d
+hnk.exe+EF6A9: 48 8B B4 24 98 00 00 00  - mov rsi,[rsp+00000098]
+hnk.exe+EF6B1: 45 85 D2                 - test r10d,r10d
+hnk.exe+EF6B4: 41 0F 4F DA              - cmovg ebx,r10d
+hnk.exe+EF6B8: 41 3B D9                 - cmp ebx,r9d
+hnk.exe+EF6BB: 44 0F 4C CB              - cmovl r9d,ebx
+hnk.exe+EF6BF: 48 8B 9C 24 90 00 00 00  - mov rbx,[rsp+00000090]
+// ---------- INJECTING HERE ----------
+hnk.exe+EF6C7: 45 89 8E 24 04 00 00     - mov [r14+00000424],r9d
+// ---------- DONE INJECTING  ----------
+hnk.exe+EF6CE: 48 83 C4 70              - add rsp,70
+hnk.exe+EF6D2: 41 5F                    - pop r15
+hnk.exe+EF6D4: 41 5E                    - pop r14
+hnk.exe+EF6D6: 5D                       - pop rbp
+hnk.exe+EF6D7: C3                       - ret 
+hnk.exe+EF6D8: CC                       - int 3 
+hnk.exe+EF6D9: CC                       - int 3 
+hnk.exe+EF6DA: CC                       - int 3 
+hnk.exe+EF6DB: CC                       - int 3 
+hnk.exe+EF6DC: CC                       - int 3 
+}
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>188</ID>
+          <Description>"Item Breakpoint"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>{$lua}
+if syntaxcheck then return end
+--if memrec then print(memrec.Description) end
+[ENABLE]
+debug_setBreakpoint("hnk.exe+3F151B")
+[DISABLE]
+debug_removeBreakpoint("hnk.exe+3F151B")
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"Infinite Items"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"hnk.exe"+3F1A3A)
+define(bytes,41 8B 44 D1 04)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"hnk.exe"+3F1A3A)
+
+label(code)
+label(return)
+
+newmem:
+  mov eax,#70
+  mov esi,0
+code:
+  // mov eax,[r9+rdx*8+04]
+  jmp return
+
+address:
+  jmp newmem
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // mov eax,[r9+rdx*8+04]
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: hnk.exe+3F1A3A
+
+hnk.exe+3F1A20: 8B C1                    - mov eax,ecx
+hnk.exe+3F1A22: 48 03 C0                 - add rax,rax
+hnk.exe+3F1A25: 8B D1                    - mov edx,ecx
+hnk.exe+3F1A27: 66 45 39 1C C1           - cmp [r9+rax*8],r11w
+hnk.exe+3F1A2C: 74 09                    - je hnk.exe+3F1A37
+hnk.exe+3F1A2E: FF C1                    - inc ecx
+hnk.exe+3F1A30: 41 3B C8                 - cmp ecx,r8d
+hnk.exe+3F1A33: 72 EB                    - jb hnk.exe+3F1A20
+hnk.exe+3F1A35: EB 15                    - jmp hnk.exe+3F1A4C
+hnk.exe+3F1A37: 48 03 D2                 - add rdx,rdx
+// ---------- INJECTING HERE ----------
+hnk.exe+3F1A3A: 41 8B 44 D1 04           - mov eax,[r9+rdx*8+04]
+// ---------- DONE INJECTING  ----------
+hnk.exe+3F1A3F: 2B C6                    - sub eax,esi
+hnk.exe+3F1A41: 85 C0                    - test eax,eax
+hnk.exe+3F1A43: 44 0F 4F D0              - cmovg r10d,eax
+hnk.exe+3F1A47: 45 89 54 D1 04           - mov [r9+rdx*8+04],r10d
+hnk.exe+3F1A4C: 80 BC 24 50 04 00 00 00  - cmp byte ptr [rsp+00000450],00
+hnk.exe+3F1A54: 74 34                    - je hnk.exe+3F1A8A
+hnk.exe+3F1A56: 48 8B D7                 - mov rdx,rdi
+hnk.exe+3F1A59: E8 B2 00 00 00           - call hnk.exe+3F1B10
+hnk.exe+3F1A5E: EB 2A                    - jmp hnk.exe+3F1A8A
+hnk.exe+3F1A60: 41 B8 FF 03 00 00        - mov r8d,000003FF
+}
+</AssemblerScript>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Toggle Activation</Action>
+          <Keys>
+            <Key>123</Key>
+          </Keys>
+          <ID>0</ID>
+          <ActivateSound>Activate</ActivateSound>
+          <DeactivateSound>Deactivate</DeactivateSound>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>75</ID>
+      <Description>"Infinite U-Materials"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"hnk.exe"+2118FA)
+define(bytes,45 8B 44 D1 04)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"hnk.exe"+2118FA)
+
+label(code)
+label(return)
+
+newmem:
+  mov r8d,#99998
+  mov [r9+rdx*8+04],r8d
+code:
+  mov r8d,[r9+rdx*8+04]
+  jmp return
+
+address:
+  jmp newmem
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // mov r8d,[r9+rdx*8+04]
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: hnk.exe+2118FA
+
+hnk.exe+2118E0: 8B C1                       - mov eax,ecx
+hnk.exe+2118E2: 48 03 C0                    - add rax,rax
+hnk.exe+2118E5: 8B D1                       - mov edx,ecx
+hnk.exe+2118E7: 66 45 39 1C C1              - cmp [r9+rax*8],r11w
+hnk.exe+2118EC: 74 16                       - je hnk.exe+211904
+hnk.exe+2118EE: FF C1                       - inc ecx
+hnk.exe+2118F0: 41 3B C8                    - cmp ecx,r8d
+hnk.exe+2118F3: 72 EB                       - jb hnk.exe+2118E0
+hnk.exe+2118F5: EB 15                       - jmp hnk.exe+21190C
+hnk.exe+2118F7: 48 03 D2                    - add rdx,rdx
+// ---------- INJECTING HERE ----------
+hnk.exe+2118FA: 45 8B 44 D1 04              - mov r8d,[r9+rdx*8+04]
+// ---------- DONE INJECTING  ----------
+hnk.exe+2118FF: E9 59 FF FF FF              - jmp hnk.exe+21185D
+hnk.exe+211904: 48 03 D2                    - add rdx,rdx
+hnk.exe+211907: 41 8B 5C D1 04              - mov ebx,[r9+rdx*8+04]
+hnk.exe+21190C: 44 8B C3                    - mov r8d,ebx
+hnk.exe+21190F: 48 8D 15 6A B4 A2 00        - lea rdx,[hnk.exe+C3CD80]
+hnk.exe+211916: 49 8B CA                    - mov rcx,r10
+hnk.exe+211919: E8 D2 B5 46 00              - call hnk.exe+67CEF0
+hnk.exe+21191E: 48 8B 05 3B 57 C7 00        - mov rax,[hnk.exe+E87060]
+hnk.exe+211925: F2 44 0F 2C 90 60 59 00 00  - cvttsd2si r10d,[rax+00005960]
+hnk.exe+21192E: B8 89 88 88 88              - mov eax,88888889
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>105</ID>
+      <Description>"Infinite Stones"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"hnk.exe"+3F151B)
+define(bytes,41 8B 44 D1 04)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"hnk.exe"+3F151B)
+
+label(code)
+label(x1)
+label(x2)
+label(set_qty)
+label(return)
+
+newmem:
+  // Black Zemurian Ore [12D-12E]
+  cmp r10w,12D
+  je set_qty
+  cmp r10w,12E
+  je set_qty
+
+  // U-Material Mass
+  cmp r10w,130
+  je set_qty
+
+x1:
+  // Silver Sealing Stones [143-147]
+  cmp r10w,142
+  jle x2
+  cmp r10w,147
+  jle set_qty
+
+x2:
+  // Silver Shards [149-14D]
+  cmp r10w,148
+  jle code
+  cmp r10w,14D
+  jg code
+
+set_qty:
+  mov eax,#99
+  mov [r9+rdx*8+04],eax
+code:
+  mov eax,[r9+rdx*8+04]
+  jmp return
+
+address:
+  jmp newmem
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // mov eax,[r9+rdx*8+04]
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: 1403F151B
+
+1403F1502: 48 03 C0        - add rax,rax
+1403F1505: 8B D1           - mov edx,ecx
+1403F1507: 66 45 39 14 C1  - cmp [r9+rax*8],r10w
+1403F150C: 74 0A           - je 1403F1518
+1403F150E: FF C1           - inc ecx
+1403F1510: 41 3B C8        - cmp ecx,r8d
+1403F1513: 72 EB           - jb 1403F1500
+1403F1515: 33 C0           - xor eax,eax
+1403F1517: C3              - ret 
+1403F1518: 48 03 D2        - add rdx,rdx
+// ---------- INJECTING HERE ----------
+1403F151B: 41 8B 44 D1 04  - mov eax,[r9+rdx*8+04]
+// ---------- DONE INJECTING  ----------
+1403F1520: C3              - ret 
+1403F1521: CC              - int 3 
+1403F1522: CC              - int 3 
+1403F1523: CC              - int 3 
+1403F1524: CC              - int 3 
+1403F1525: CC              - int 3 
+1403F1526: CC              - int 3 
+1403F1527: CC              - int 3 
+1403F1528: CC              - int 3 
+1403F1529: CC              - int 3 
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>129</ID>
+      <Description>"Infinite Shards"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"hnk.exe"+211907)
+define(bytes,41 8B 5C D1 04)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"hnk.exe"+211907)
+
+label(code)
+label(return)
+
+newmem:
+  mov ebx,#99999
+  mov [r9+rdx*8+04],ebx
+code:
+  mov ebx,[r9+rdx*8+04]
+  jmp return
+
+address:
+  jmp newmem
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // mov ebx,[r9+rdx*8+04]
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: hnk.exe+211907
+
+hnk.exe+2118E7: 66 45 39 1C C1              - cmp [r9+rax*8],r11w
+hnk.exe+2118EC: 74 16                       - je hnk.exe+211904
+hnk.exe+2118EE: FF C1                       - inc ecx
+hnk.exe+2118F0: 41 3B C8                    - cmp ecx,r8d
+hnk.exe+2118F3: 72 EB                       - jb hnk.exe+2118E0
+hnk.exe+2118F5: EB 15                       - jmp hnk.exe+21190C
+hnk.exe+2118F7: 48 03 D2                    - add rdx,rdx
+hnk.exe+2118FA: 45 8B 44 D1 04              - mov r8d,[r9+rdx*8+04]
+hnk.exe+2118FF: E9 59 FF FF FF              - jmp hnk.exe+21185D
+hnk.exe+211904: 48 03 D2                    - add rdx,rdx
+// ---------- INJECTING HERE ----------
+hnk.exe+211907: 41 8B 5C D1 04              - mov ebx,[r9+rdx*8+04]
+// ---------- DONE INJECTING  ----------
+hnk.exe+21190C: 44 8B C3                    - mov r8d,ebx
+hnk.exe+21190F: 48 8D 15 6A B4 A2 00        - lea rdx,[hnk.exe+C3CD80]
+hnk.exe+211916: 49 8B CA                    - mov rcx,r10
+hnk.exe+211919: E8 D2 B5 46 00              - call hnk.exe+67CEF0
+hnk.exe+21191E: 48 8B 05 3B 57 C7 00        - mov rax,[hnk.exe+E87060]
+hnk.exe+211925: F2 44 0F 2C 90 60 59 00 00  - cvttsd2si r10d,[rax+00005960]
+hnk.exe+21192E: B8 89 88 88 88              - mov eax,88888889
+hnk.exe+211933: 41 F7 EA                    - imul r10d
+hnk.exe+211936: B8 89 88 88 88              - mov eax,88888889
+hnk.exe+21193B: 45 8D 04 12                 - lea r8d,[r10+rdx]
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>196</ID>
+      <Description>"Craft"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>hnk.exe+1641098</Address>
+      <Offsets>
+        <Offset>0</Offset>
+      </Offsets>
+    </CheatEntry>
+  </CheatEntries>
+  <CheatCodes>
+    <CodeEntry>
+      <Description>Code :movzx eax,word ptr [rdx]</Description>
+      <AddressString>hnk.exe+D22AA</AddressString>
+      <Before>
+        <Byte>57</Byte>
+        <Byte>48</Byte>
+        <Byte>83</Byte>
+        <Byte>EC</Byte>
+        <Byte>20</Byte>
+      </Before>
+      <Actual>
+        <Byte>0F</Byte>
+        <Byte>B7</Byte>
+        <Byte>02</Byte>
+      </Actual>
+      <After>
+        <Byte>48</Byte>
+        <Byte>8B</Byte>
+        <Byte>DA</Byte>
+        <Byte>66</Byte>
+        <Byte>89</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Code :movzx eax,word ptr [rcx]</Description>
+      <AddressString>hnk.exe+27D725</AddressString>
+      <Before>
+        <Byte>22</Byte>
+        <Byte>3C</Byte>
+        <Byte>01</Byte>
+        <Byte>76</Byte>
+        <Byte>1E</Byte>
+      </Before>
+      <Actual>
+        <Byte>0F</Byte>
+        <Byte>B7</Byte>
+        <Byte>01</Byte>
+      </Actual>
+      <After>
+        <Byte>41</Byte>
+        <Byte>3B</Byte>
+        <Byte>C3</Byte>
+        <Byte>75</Byte>
+        <Byte>16</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Code :movzx eax,word ptr [rcx]</Description>
+      <AddressString>hnk.exe+27D785</AddressString>
+      <Before>
+        <Byte>22</Byte>
+        <Byte>3C</Byte>
+        <Byte>01</Byte>
+        <Byte>76</Byte>
+        <Byte>13</Byte>
+      </Before>
+      <Actual>
+        <Byte>0F</Byte>
+        <Byte>B7</Byte>
+        <Byte>01</Byte>
+      </Actual>
+      <After>
+        <Byte>41</Byte>
+        <Byte>3B</Byte>
+        <Byte>C3</Byte>
+        <Byte>75</Byte>
+        <Byte>0B</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
+  <UserdefinedSymbols/>
+</CheatTable>
