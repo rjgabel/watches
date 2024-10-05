@@ -1,0 +1,3422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>14</ID>
+      <Description>"Position"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>ed8_3_PC.exe+16C3308</Address>
+      <Offsets>
+        <Offset>364</Offset>
+        <Offset>39F48</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>493</ID>
+          <Description>"X"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>15</ID>
+          <Description>"Y"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>16</ID>
+          <Description>"Z"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>18</ID>
+          <Description>"Camera Hack"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>define(address,"ed8_3_PC.exe"+215A58)
+define(bytes,89 81 60 08 00 00)
+
+define(address2,"ed8_3_PC.exe"+217835)
+define(bytes2,89 83 60 08 00 00)
+
+[ENABLE]
+
+address:
+  nop 6
+
+address2:
+  nop 6
+
+[DISABLE]
+
+address:
+  db bytes
+  // mov [rcx+00000860],eax
+
+address2:
+  db bytes2
+  // mov [rbx+00000860],eax
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>494</ID>
+      <Description>"Position"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>ed8_3_PC.exe+16C3308</Address>
+      <Offsets>
+        <Offset>0</Offset>
+        <Offset>39F48</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>495</ID>
+          <Description>"X"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>13</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+A8</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>491</ID>
+      <Description>"Map"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>String</VariableType>
+      <Length>6</Length>
+      <Unicode>0</Unicode>
+      <CodePage>0</CodePage>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>ed8_3_PC.exe+16C3A38</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>24</ID>
+      <Description>"Name"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>String</VariableType>
+      <Length>45</Length>
+      <Unicode>0</Unicode>
+      <CodePage>0</CodePage>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>ed8_3_PC.exe+18CB1C8</Address>
+      <Offsets>
+        <Offset>7EC</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"Party"</Description>
+      <Options moHideChildren="1"/>
+      <DropDownList DisplayValueAsItem="1">0000:Rean
+0001:Alisa
+0002:Elliot
+0003:Laura
+0004:Machias
+0005:Emma
+0006:Jusis
+0007:Fie
+0008:Gaius
+0009:Millium
+000A:Juna
+000B:Kurt
+000C:Altina
+000D:Musse
+000E:Ash
+000F:Sara
+0010:Aurelia
+0011:Agate
+0012:Angelica
+0013:Olivier
+0014:Tita
+0015:Tio
+0016:Sharon
+0017:Claire
+0018:Lechter
+</DropDownList>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>ed8_3_PC.exe+1A0F848</Address>
+      <Offsets>
+        <Offset>0</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>8</ID>
+          <Description>"Party Size"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>ed8_3_PC.exe+1A0F840</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1</ID>
+          <Description>"1"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>4</ID>
+          <Description>"2"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*1</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>5</ID>
+          <Description>"3"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*2</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>6</ID>
+          <Description>"4"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*3</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>7</ID>
+          <Description>"5"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>406</ID>
+          <Description>"6"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*5</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>407</ID>
+          <Description>"7"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*6</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>470</ID>
+          <Description>"8"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*7</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>471</ID>
+          <Description>"9"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>481</ID>
+          <Description>"10"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*9</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>482</ID>
+          <Description>"11"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*A</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>483</ID>
+          <Description>"12"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*B</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>484</ID>
+          <Description>"13"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>485</ID>
+          <Description>"14"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*D</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>486</ID>
+          <Description>"15"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*E</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>487</ID>
+          <Description>"16"</Description>
+          <DropDownListLink>party</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+2*F</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>78</ID>
+          <Description>"Infinite Link EXP"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>{$lua}
+if syntaxcheck then return end
+--if memrec then print(memrec.Description) end
+[ENABLE]
+local party_size = readInteger("ed8_3_PC.exe+1A0F840")
+local party_ptr = readPointer("ed8_3_PC.exe+1A0F848")
+local party = {}
+for i=0,party_size-1 do
+  party[i]=readSmallInteger(party_ptr+2*i)
+end
+local link_exp_ptr = readPointer("ed8_3_PC.exe+1A0F830")
+for i=0,party_size-1 do
+  for j=0,party_size-1 do
+    if i ~= j then
+      writeBytes(link_exp_ptr+0x30*party[i]+party[j],5)
+      -- Link EXP
+      writeInteger(link_exp_ptr+0xC0*party[i]+0x4*party[j]+0x900,9999)
+    end
+  end
+end
+[DISABLE]
+
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>34</ID>
+      <Description>"EXP"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>ed8_3_PC.exe+1A17D44</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>36</ID>
+          <Description>"Rean"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0000</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>35</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>33</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>343</ID>
+          <Description>"Alisa"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0001</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>344</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>345</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>256</ID>
+          <Description>"Elliot"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0002</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>257</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>258</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>259</ID>
+          <Description>"Laura"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0003</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>260</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>261</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>346</ID>
+          <Description>"Machias"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0004</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>347</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>348</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>316</ID>
+          <Description>"Emma"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0005</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>317</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>318</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>438</ID>
+          <Description>"Jusis"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0006</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>439</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>440</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>262</ID>
+          <Description>"Fie"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0007</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>263</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>264</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>441</ID>
+          <Description>"Gaius"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0008</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>442</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>443</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>100</ID>
+          <Description>"Millium"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0009</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>101</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>102</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>41</ID>
+          <Description>"Juna"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*000A</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>43</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>42</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>44</ID>
+          <Description>"Kurt"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*000B</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>46</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>45</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>47</ID>
+          <Description>"Altina"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*000C</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>49</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>48</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>403</ID>
+          <Description>"Musse"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*000D</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>404</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>405</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>400</ID>
+          <Description>"Ash"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*000E</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>401</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>402</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>423</ID>
+          <Description>"Sara"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*000F</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>424</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>425</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>450</ID>
+          <Description>"Aurelia"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0010</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>451</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>452</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>271</ID>
+          <Description>"Agate"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0011</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>272</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>273</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>420</ID>
+          <Description>"Angelica"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0012</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>421</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>422</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>361</ID>
+          <Description>"Olivier"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0013</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>362</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>363</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>456</ID>
+          <Description>"Tita"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0014</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>457</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>458</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>295</ID>
+          <Description>"Tio"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0015</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>296</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>297</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>304</ID>
+          <Description>"Sharon"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0016</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>305</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>306</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>118</ID>
+          <Description>"Claire"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0017</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>119</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>120</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>472</ID>
+          <Description>"Lechter"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+5C*0018</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>473</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>474</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>93</ID>
+      <Description>"Extra Stats"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>ed8_3_PC.exe+1A18E50</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>159</ID>
+          <Description>"Rean"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0000</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>108</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>190</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>212</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>158</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>206</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>331</ID>
+          <Description>"Alisa"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0001</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>332</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>333</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>334</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>335</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>336</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>238</ID>
+          <Description>"Elliot"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0002</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>239</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>240</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>241</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>242</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>243</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>244</ID>
+          <Description>"Laura"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0003</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>245</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>246</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>247</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>248</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>249</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>337</ID>
+          <Description>"Machias"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0004</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>338</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>339</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>340</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>341</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>342</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>310</ID>
+          <Description>"Emma"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0005</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>311</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>312</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>313</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>314</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>315</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>426</ID>
+          <Description>"Jusis"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0006</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>427</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>428</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>429</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>430</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>431</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>250</ID>
+          <Description>"Fie"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0007</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>251</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>252</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>253</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>254</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>255</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>432</ID>
+          <Description>"Gaius"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0008</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>433</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>434</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>435</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>436</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>437</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>175</ID>
+          <Description>"Millium"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0009</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>213</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>214</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>215</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>216</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>217</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>178</ID>
+          <Description>"Juna"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*000A</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>218</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>219</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>220</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>221</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>222</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>181</ID>
+          <Description>"Kurt"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*000B</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>223</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>224</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>225</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>226</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>227</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>184</ID>
+          <Description>"Altina"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*000C</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>228</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>229</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>230</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>231</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>232</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>319</ID>
+          <Description>"Musse"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*000D</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>320</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>321</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>322</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>323</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>324</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>325</ID>
+          <Description>"Ash"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*000E</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>326</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>327</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>328</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>329</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>330</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>414</ID>
+          <Description>"Sara"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*000F</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>415</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>416</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>417</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>418</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>419</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>444</ID>
+          <Description>"Aurelia"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0010</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>445</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>446</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>447</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>448</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>449</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>265</ID>
+          <Description>"Agate"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0011</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>266</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>267</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>268</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>269</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>270</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>408</ID>
+          <Description>"Angelica"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0012</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>409</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>410</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>411</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>412</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>413</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>355</ID>
+          <Description>"Olivier"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0013</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>356</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>357</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>358</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>359</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>360</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>459</ID>
+          <Description>"Tita"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0014</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>460</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>461</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>462</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>463</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>464</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>289</ID>
+          <Description>"Tio"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0015</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>290</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>291</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>292</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>293</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>294</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>298</ID>
+          <Description>"Sharon"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0016</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>299</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>300</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>301</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>302</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>303</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>187</ID>
+          <Description>"Claire"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0017</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>233</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>234</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>235</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>236</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>237</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>475</ID>
+          <Description>"Lechter"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+24*0018</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>476</ID>
+              <Description>"HP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>477</ID>
+              <Description>"STR"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>478</ID>
+              <Description>"DEF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>479</ID>
+              <Description>"ATS"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>480</ID>
+              <Description>"ADF"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>58</ID>
+      <Description>"Master Quartz EXP"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>ed8_3_PC.exe+1A1D170</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>53</ID>
+          <Description>"Brigid (Rean)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*0</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>52</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>51</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>59</ID>
+          <Description>"Skuld (Juna)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*1</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>60</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>61</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>62</ID>
+          <Description>"Sirius (Kurt)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*2</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>63</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>64</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>65</ID>
+          <Description>"Deva (Altina)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*3</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>66</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>67</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>143</ID>
+          <Description>"Canon (Elliot)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*4</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>144</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>145</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>146</ID>
+          <Description>"Regulus (Laura)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*5</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>147</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>148</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>149</ID>
+          <Description>"Zephyr (Fie)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*6</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>150</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>151</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>152</ID>
+          <Description>"Kaleido"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*7</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>153</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>154</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>155</ID>
+          <Description>"Oberon"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*8</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>156</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>157</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>274</ID>
+          <Description>"Moebius"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*9</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>275</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>276</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>277</ID>
+          <Description>"Sophia (Alisa)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*A</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>278</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>279</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>280</ID>
+          <Description>"Keeper (Machias)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*B</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>281</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>282</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>283</ID>
+          <Description>"Titania (Emma)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*C</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>284</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>285</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>286</ID>
+          <Description>"Gloom"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*D</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>287</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>288</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>307</ID>
+          <Description>"Katze"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*E</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>308</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>309</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>349</ID>
+          <Description>"Virgo (Musse)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*F</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>350</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>351</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>352</ID>
+          <Description>"Scorpio (Ash)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*10</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>353</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>354</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>364</ID>
+          <Description>"Dunamis (Jusis)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*11</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>365</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>366</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>367</ID>
+          <Description>"Tempest (Gaius)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*12</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>368</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>369</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>370</ID>
+          <Description>"Aegis (Millium)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*13</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>371</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>372</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>373</ID>
+          <Description>"Thor (Sara)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*14</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>374</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>375</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>376</ID>
+          <Description>"Beowulf"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*15</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>377</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>378</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>379</ID>
+          <Description>"Minotauros"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*16</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>380</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>381</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>382</ID>
+          <Description>"Pandora"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*17</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>383</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>384</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>385</ID>
+          <Description>"Emblem"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*18</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>386</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>387</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>388</ID>
+          <Description>"Magius"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*19</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>389</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>390</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>391</ID>
+          <Description>"Chevalier"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*1A</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>392</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>393</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>394</ID>
+          <Description>"Gungnir"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*1B</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>395</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>396</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>397</ID>
+          <Description>"Regalia EX (Olivier)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*1C</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>398</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>399</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>453</ID>
+          <Description>"Valhalla EX (Olivier)"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>+20*1D</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>454</ID>
+              <Description>"Level"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>455</ID>
+              <Description>"EXP"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>121</ID>
+          <Description>"EX"</Description>
+          <Options moHideChildren="1"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <GroupHeader>1</GroupHeader>
+          <Address>ed8_3_PC.exe+1A36020</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>105</ID>
+              <Description>"Kaleido EX (Claire)"</Description>
+              <Options moHideChildren="1"/>
+              <ShowAsSigned>0</ShowAsSigned>
+              <GroupHeader>1</GroupHeader>
+              <Address>+20*0</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>106</ID>
+                  <Description>"Level"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>107</ID>
+                  <Description>"EXP"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+4</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>140</ID>
+              <Description>"Moebius EX (Tita)"</Description>
+              <Options moHideChildren="1"/>
+              <ShowAsSigned>0</ShowAsSigned>
+              <GroupHeader>1</GroupHeader>
+              <Address>+20*1</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>141</ID>
+                  <Description>"Level"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>142</ID>
+                  <Description>"EXP"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+4</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>137</ID>
+              <Description>"Gloom EX (Sharon)"</Description>
+              <Options moHideChildren="1"/>
+              <ShowAsSigned>0</ShowAsSigned>
+              <GroupHeader>1</GroupHeader>
+              <Address>+20*2</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>138</ID>
+                  <Description>"Level"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>139</ID>
+                  <Description>"EXP"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+4</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>134</ID>
+              <Description>"Katze EX (Tio)"</Description>
+              <Options moHideChildren="1"/>
+              <ShowAsSigned>0</ShowAsSigned>
+              <GroupHeader>1</GroupHeader>
+              <Address>+20*3</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>135</ID>
+                  <Description>"Level"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>136</ID>
+                  <Description>"EXP"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+4</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>131</ID>
+              <Description>"Beowulf EX (Agate)"</Description>
+              <Options moHideChildren="1"/>
+              <ShowAsSigned>0</ShowAsSigned>
+              <GroupHeader>1</GroupHeader>
+              <Address>+20*4</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>132</ID>
+                  <Description>"Level"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>133</ID>
+                  <Description>"EXP"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+4</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>128</ID>
+              <Description>"Emblem EX (Angelica)"</Description>
+              <Options moHideChildren="1"/>
+              <ShowAsSigned>0</ShowAsSigned>
+              <GroupHeader>1</GroupHeader>
+              <Address>+20*5</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>129</ID>
+                  <Description>"Level"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>130</ID>
+                  <Description>"EXP"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+4</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>125</ID>
+              <Description>"Chevalier EX (Lechter)"</Description>
+              <Options moHideChildren="1"/>
+              <ShowAsSigned>0</ShowAsSigned>
+              <GroupHeader>1</GroupHeader>
+              <Address>+20*6</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>126</ID>
+                  <Description>"Level"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>127</ID>
+                  <Description>"EXP"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+4</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>122</ID>
+              <Description>"Aegis EX (Millium)"</Description>
+              <Options moHideChildren="1"/>
+              <ShowAsSigned>0</ShowAsSigned>
+              <GroupHeader>1</GroupHeader>
+              <Address>+20*7</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>123</ID>
+                  <Description>"Level"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>124</ID>
+                  <Description>"EXP"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>+4</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>83</ID>
+      <Description>"Sepith"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>ed8_3_PC.exe+1A17CA0</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>82</ID>
+          <Description>"Earth"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>84</ID>
+          <Description>"Water"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*1</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>85</ID>
+          <Description>"Fire"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*2</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>86</ID>
+          <Description>"Wind"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*3</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>87</ID>
+          <Description>"Time"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>88</ID>
+          <Description>"Space"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*5</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>89</ID>
+          <Description>"Mirage"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*6</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>90</ID>
+          <Description>"Mass"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*7</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>91</ID>
+      <Description>"Mira"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>ed8_3_PC.exe+1A17D00</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>98</ID>
+      <Description>"Bonding Points"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>ed8_3_PC.exe+16C48D4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>81</ID>
+      <Description>"Brave Points"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Byte</VariableType>
+      <Address>ed8_3_PC.exe+1A0F830</Address>
+      <Offsets>
+        <Offset>5A11</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>79</ID>
+      <Description>"Assault Points"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>ed8_3_PC.exe+1A17D0C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>96</ID>
+      <Description>"Minigame"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>114</ID>
+          <Description>"Vantage Masters"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>define(address,"ed8_3_PC.exe"+366FC2)
+define(bytes,44 0F B7 B2 BC 02 00 00)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"ed8_3_PC.exe"+366FC2)
+
+label(code)
+label(return)
+
+newmem:
+  mov word ptr [rdx+000002BC],0
+code:
+  movzx r14d,word ptr [rdx+000002BC]
+  jmp return
+
+address:
+  jmp newmem
+  nop 3
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // movzx r14d,word ptr [rdx+000002BC]
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: ed8_3_PC.exe+366FC2
+
+ed8_3_PC.exe+366F92: 33 FF                       - xor edi,edi
+ed8_3_PC.exe+366F94: 4C 89 B4 24 30 01 00 00     - mov [rsp+00000130],r14
+ed8_3_PC.exe+366F9C: 4C 2B C9                    - sub r9,rcx
+ed8_3_PC.exe+366F9F: 44 0F B7 F7                 - movzx r14d,di
+ed8_3_PC.exe+366FA3: 44 8D 47 07                 - lea r8d,[rdi+07]
+ed8_3_PC.exe+366FA7: 66 0F 1F 84 00 00 00 00 00  - nop word ptr [rax+rax+00000000]
+ed8_3_PC.exe+366FB0: 49 8B 14 09                 - mov rdx,[r9+rcx]
+ed8_3_PC.exe+366FB4: 48 8B 82 A8 02 00 00        - mov rax,[rdx+000002A8]
+ed8_3_PC.exe+366FBB: 66 83 78 02 02              - cmp word ptr [rax+02],02
+ed8_3_PC.exe+366FC0: 75 08                       - jne ed8_3_PC.exe+366FCA
+// ---------- INJECTING HERE ----------
+ed8_3_PC.exe+366FC2: 44 0F B7 B2 BC 02 00 00     - movzx r14d,word ptr [rdx+000002BC]
+// ---------- DONE INJECTING  ----------
+ed8_3_PC.exe+366FCA: 48 8B 11                    - mov rdx,[rcx]
+ed8_3_PC.exe+366FCD: 48 8B 82 A8 02 00 00        - mov rax,[rdx+000002A8]
+ed8_3_PC.exe+366FD4: 66 83 78 02 02              - cmp word ptr [rax+02],02
+ed8_3_PC.exe+366FD9: 75 07                       - jne ed8_3_PC.exe+366FE2
+ed8_3_PC.exe+366FDB: 0F B7 BA BC 02 00 00        - movzx edi,word ptr [rdx+000002BC]
+ed8_3_PC.exe+366FE2: 48 83 C1 08                 - add rcx,08
+ed8_3_PC.exe+366FE6: 49 83 E8 01                 - sub r8,01
+ed8_3_PC.exe+366FEA: 75 C4                       - jne ed8_3_PC.exe+366FB0
+ed8_3_PC.exe+366FEC: 0F BF DF                    - movsx ebx,di
+ed8_3_PC.exe+366FEF: 4C 8D 05 DA 87 49 00        - lea r8,[ed8_3_PC.exe+7FF7D0]
+}
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>469</ID>
+          <Description>"Swimming"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>ed8_3_PC.exe+16FD090</Address>
+          <Offsets>
+            <Offset>364</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>489</ID>
+          <Description>"Horse Race"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>{ Game   : ed8_3_PC.exe
+  Version: 
+  Date   : 2024-02-15
+  Author : ryanj
+
+  This script does blah blah blah
+}
+
+define(address,"ed8_3_PC.exe"+35CAEF)
+define(bytes,F3 0F 11 61 4C)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"ed8_3_PC.exe"+35CAEF)
+
+label(code)
+label(value)
+label(return)
+
+newmem:
+  movss xmm4,[value]
+code:
+  movss [rcx+4C],xmm4
+  jmp return
+value:
+  dd (float)35
+
+
+address:
+  jmp newmem
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // movss [rcx+4C],xmm4
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: ed8_3_PC.exe+35CAEF
+
+ed8_3_PC.exe+35CAC2: 48 89 84 24 20 04 00 00  - mov [rsp+00000420],rax
+ed8_3_PC.exe+35CACA: 83 79 0C 03              - cmp dword ptr [rcx+0C],03
+ed8_3_PC.exe+35CACE: 0F 28 C1                 - movaps xmm0,xmm1
+ed8_3_PC.exe+35CAD1: F3 44 0F 10 41 4C        - movss xmm8,[rcx+4C]
+ed8_3_PC.exe+35CAD7: 0F 28 F9                 - movaps xmm7,xmm1
+ed8_3_PC.exe+35CADA: F3 0F 59 05 F6 B5 49 00  - mulss xmm0,[ed8_3_PC.exe+7F80D8]
+ed8_3_PC.exe+35CAE2: 41 0F 28 E0              - movaps xmm4,xmm8
+ed8_3_PC.exe+35CAE6: 48 8B D9                 - mov rbx,rcx
+ed8_3_PC.exe+35CAE9: 75 09                    - jne ed8_3_PC.exe+35CAF4
+ed8_3_PC.exe+35CAEB: F3 0F 58 E7              - addss xmm4,xmm7
+// ---------- INJECTING HERE ----------
+ed8_3_PC.exe+35CAEF: F3 0F 11 61 4C           - movss [rcx+4C],xmm4
+// ---------- DONE INJECTING  ----------
+ed8_3_PC.exe+35CAF4: F3 0F 10 69 58           - movss xmm5,[rcx+58]
+ed8_3_PC.exe+35CAF9: 0F 28 D8                 - movaps xmm3,xmm0
+ed8_3_PC.exe+35CAFC: 0F 57 1D 4D 2B 49 00     - xorps xmm3,[ed8_3_PC.exe+7EF650]
+ed8_3_PC.exe+35CB03: 0F 2F DD                 - comiss xmm3,xmm5
+ed8_3_PC.exe+35CB06: 77 07                    - ja ed8_3_PC.exe+35CB0F
+ed8_3_PC.exe+35CB08: 0F 28 D8                 - movaps xmm3,xmm0
+ed8_3_PC.exe+35CB0B: F3 0F 5D DD              - minss xmm3,xmm5
+ed8_3_PC.exe+35CB0F: F3 0F 10 0D 25 62 49 00  - movss xmm1,[ed8_3_PC.exe+7F2D3C]
+ed8_3_PC.exe+35CB17: 33 C0                    - xor eax,eax
+ed8_3_PC.exe+35CB19: 0F 5A C5                 - cvtps2pd xmm0,xmm5
+}
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>22</ID>
+      <Description>"Invulnerable"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"ed8_3_PC.exe"+156DA0)
+define(bytes,89 9F 64 03 00 00)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"ed8_3_PC.exe"+156DA0)
+
+label(code)
+label(return)
+
+newmem:
+  cmp dword ptr [rdi+B0],0
+  je return
+code:
+  mov [rdi+00000364],ebx
+  jmp return
+
+address:
+  jmp newmem
+  nop
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // mov [rdi+00000364],ebx
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: ed8_3_PC.exe+156DA0
+
+ed8_3_PC.exe+156D7A: F7 E1                    - mul ecx
+ed8_3_PC.exe+156D7C: C1 EA 05                 - shr edx,05
+ed8_3_PC.exe+156D7F: 03 DA                    - add ebx,edx
+ed8_3_PC.exe+156D81: 45 2B FE                 - sub r15d,r14d
+ed8_3_PC.exe+156D84: 45 85 FF                 - test r15d,r15d
+ed8_3_PC.exe+156D87: 41 0F 4F F7              - cmovg esi,r15d
+ed8_3_PC.exe+156D8B: 4C 8B BC 24 90 00 00 00  - mov r15,[rsp+00000090]
+ed8_3_PC.exe+156D93: 3B F3                    - cmp esi,ebx
+ed8_3_PC.exe+156D95: 0F 4C DE                 - cmovl ebx,esi
+ed8_3_PC.exe+156D98: 48 8B B4 24 98 00 00 00  - mov rsi,[rsp+00000098]
+// ---------- INJECTING HERE ----------
+ed8_3_PC.exe+156DA0: 89 9F 64 03 00 00        - mov [rdi+00000364],ebx
+// ---------- DONE INJECTING  ----------
+ed8_3_PC.exe+156DA6: 48 8B 9C 24 D0 00 00 00  - mov rbx,[rsp+000000D0]
+ed8_3_PC.exe+156DAE: 48 8B 4D 27              - mov rcx,[rbp+27]
+ed8_3_PC.exe+156DB2: 48 33 CC                 - xor rcx,rsp
+ed8_3_PC.exe+156DB5: E8 B6 B6 58 00           - call ed8_3_PC.exe+6E2470
+ed8_3_PC.exe+156DBA: 48 81 C4 A0 00 00 00     - add rsp,000000A0
+ed8_3_PC.exe+156DC1: 41 5E                    - pop r14
+ed8_3_PC.exe+156DC3: 5F                       - pop rdi
+ed8_3_PC.exe+156DC4: 5D                       - pop rbp
+ed8_3_PC.exe+156DC5: C3                       - ret 
+ed8_3_PC.exe+156DC6: CC                       - int 3 
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>28</ID>
+      <Description>"Infinite Items"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"ed8_3_PC.exe"+34311C)
+define(bytes,41 0F B7 C6 42 0F B7 4C 0A 02)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"ed8_3_PC.exe"+34311C)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  mov eax,0
+  mov ecx,#69
+  jmp return
+
+address:
+  jmp newmem
+  nop 5
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // movzx eax,r14w
+  // movzx ecx,word ptr [rdx+r9+02]
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: ed8_3_PC.exe+34311C
+
+ed8_3_PC.exe+343100: 8B C1              - mov eax,ecx
+ed8_3_PC.exe+343102: 48 C1 E0 05        - shl rax,05
+ed8_3_PC.exe+343106: 8B D1              - mov edx,ecx
+ed8_3_PC.exe+343108: 66 42 39 1C 08     - cmp [rax+r9],bx
+ed8_3_PC.exe+34310D: 74 09              - je ed8_3_PC.exe+343118
+ed8_3_PC.exe+34310F: FF C1              - inc ecx
+ed8_3_PC.exe+343111: 41 3B C8           - cmp ecx,r8d
+ed8_3_PC.exe+343114: 72 EA              - jb ed8_3_PC.exe+343100
+ed8_3_PC.exe+343116: EB 1D              - jmp ed8_3_PC.exe+343135
+ed8_3_PC.exe+343118: 48 C1 E2 05        - shl rdx,05
+// ---------- INJECTING HERE ----------
+ed8_3_PC.exe+34311C: 41 0F B7 C6        - movzx eax,r14w
+// ---------- DONE INJECTING  ----------
+ed8_3_PC.exe+343120: 42 0F B7 4C 0A 02  - movzx ecx,word ptr [rdx+r9+02]
+ed8_3_PC.exe+343126: 2B C8              - sub ecx,eax
+ed8_3_PC.exe+343128: 85 C9              - test ecx,ecx
+ed8_3_PC.exe+34312A: 66 44 0F 4F D1     - cmovg r10w,cx
+ed8_3_PC.exe+34312F: 66 46 89 54 0A 02  - mov [rdx+r9+02],r10w
+ed8_3_PC.exe+343135: 40 84 F6           - test sil,sil
+ed8_3_PC.exe+343138: 74 0B              - je ed8_3_PC.exe+343145
+ed8_3_PC.exe+34313A: 48 8B D7           - mov rdx,rdi
+ed8_3_PC.exe+34313D: 48 8B CD           - mov rcx,rbp
+ed8_3_PC.exe+343140: E8 7B F5 FF FF     - call ed8_3_PC.exe+3426C0
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>492</ID>
+      <Description>"Map Breakpoint"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{$lua}
+if syntaxcheck then return end
+--if memrec then print(memrec.Description) end
+[ENABLE]
+debug_setBreakpoint("ed8_3_PC.exe+3287B0")
+[DISABLE]
+debug_removeBreakpoint("ed8_3_PC.exe+3287B0")
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>496</ID>
+      <Description>"Model Load"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{$lua}
+if syntaxcheck then return end
+--if memrec then print(memrec.Description) end
+[ENABLE]
+debug_setBreakpoint("ed8_3_PC.exe+2568D4")
+[DISABLE]
+debug_removeBreakpoint("ed8_3_PC.exe+2568D4")
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
