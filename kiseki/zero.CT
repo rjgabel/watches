@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"Coordinates"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>zero.exe+4C2C00</Address>
+      <Offsets>
+        <Offset>80</Offset>
+        <Offset>7259D8</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>7</ID>
+          <Description>"X"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>9</ID>
+          <Description>"Y"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>8</ID>
+          <Description>"Z"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+8</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>48</ID>
+      <Description>"Party Member 1"</Description>
+      <DropDownList DisplayValueAsItem="1">00:Lloyd
+01:Elie
+02:Tio
+03:Randy
+04:Wazy
+05:Yin
+06:Estelle
+07:Joshua
+08:Noel
+09:Dudley
+</DropDownList>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Byte</VariableType>
+      <Address>zero.exe+4C2C00</Address>
+      <Offsets>
+        <Offset>7259F0</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>32</ID>
+      <Description>"Experience"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>zero.exe+4C2C00</Address>
+      <Offsets>
+        <Offset>725A10</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>31</ID>
+          <Description>"Lloyd"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+34*0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>33</ID>
+          <Description>"Elie"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+34*1</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>34</ID>
+          <Description>"Tio"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+34*2</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>35</ID>
+          <Description>"Randy"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+34*3</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>50</ID>
+          <Description>"Wazy"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+34*4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>59</ID>
+          <Description>"Yin"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+34*5</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>60</ID>
+          <Description>"Estelle"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+34*6</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>61</ID>
+          <Description>"Joshua"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+34*7</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>49</ID>
+          <Description>"Noel"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+34*8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>58</ID>
+          <Description>"Dudley"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+34*9</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>37</ID>
+      <Description>"Mira"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>zero.exe+4C2C00</Address>
+      <Offsets>
+        <Offset>729BEC</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>47</ID>
+      <Description>"Tokens"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>zero.exe+4C2C00</Address>
+      <Offsets>
+        <Offset>729BF4</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>40</ID>
+      <Description>"Sepith"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>zero.exe+4C2C00</Address>
+      <Offsets>
+        <Offset>729C04</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>39</ID>
+          <Description>"Earth"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>41</ID>
+          <Description>"Water"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*1</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>42</ID>
+          <Description>"Fire"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*2</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>43</ID>
+          <Description>"Wind"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*3</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>44</ID>
+          <Description>"Time"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>45</ID>
+          <Description>"Space"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*5</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>46</ID>
+          <Description>"Mirage"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4*6</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>53</ID>
+      <Description>"Combat Record"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>zero.exe+4C2C00</Address>
+      <Offsets>
+        <Offset>72B9BC</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>52</ID>
+          <Description>"Total Battles Fought"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>54</ID>
+          <Description>"Victories"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>55</ID>
+          <Description>"Enemies Slain"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+14</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>57</ID>
+          <Description>"Arts/Crafts Canceled"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+18</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>29</ID>
+      <Description>"Invincible"</Description>
+      <Options moAlwaysHideChildren="1" moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>20</ID>
+          <Description>"Invincible (Direct Damage)"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>{ Game   : zero.exe
+  Version:
+  Date   :
+  Author :
+
+  This script does blah blah blah
+}
+
+define(address,"zero.exe"+16DCD4)
+define(bytes,44 89 8A 78 02 00 00)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"zero.exe"+16DCD4)
+
+label(code)
+label(return)
+
+newmem:
+  cmp byte ptr [rdx+A],FF
+  jne return
+code:
+  mov [rdx+00000278],r9d
+  jmp return
+
+address:
+  jmp newmem
+  nop 2
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // mov [rdx+00000278],r9d
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: zero.exe+16DCD4
+
+zero.exe+16DCB4: 4C 8B C2                 - mov r8,rdx
+zero.exe+16DCB7: 33 FF                    - xor edi,edi
+zero.exe+16DCB9: 0F 57 C9                 - xorps xmm1,xmm1
+zero.exe+16DCBC: 45 8B CB                 - mov r9d,r11d
+zero.exe+16DCBF: 44 2B CB                 - sub r9d,ebx
+zero.exe+16DCC2: 0F 57 D2                 - xorps xmm2,xmm2
+zero.exe+16DCC5: 44 3B DB                 - cmp r11d,ebx
+zero.exe+16DCC8: 4C 8B D1                 - mov r10,rcx
+zero.exe+16DCCB: F3 49 0F 2A D3           - cvtsi2ss xmm2,r11
+zero.exe+16DCD0: 44 0F 46 CF              - cmovbe r9d,edi
+// ---------- INJECTING HERE ----------
+zero.exe+16DCD4: 44 89 8A 78 02 00 00     - mov [rdx+00000278],r9d
+// ---------- DONE INJECTING  ----------
+zero.exe+16DCDB: 0F B7 02                 - movzx eax,word ptr [rdx]
+zero.exe+16DCDE: 48 05 A1 4A 00 00        - add rax,00004AA1
+zero.exe+16DCE4: F3 0F 10 1D DC 04 2B 00  - movss xmm3,[zero.exe+41E1C8]
+zero.exe+16DCEC: 48 6B D0 2C              - imul rdx,rax,2C
+zero.exe+16DCF0: 41 8B C1                 - mov eax,r9d
+zero.exe+16DCF3: 48 03 D1                 - add rdx,rcx
+zero.exe+16DCF6: 41 8B 88 74 02 00 00     - mov ecx,[r8+00000274]
+zero.exe+16DCFD: F3 48 0F 2A C8           - cvtsi2ss xmm1,rax
+zero.exe+16DD02: C6 42 28 01              - mov byte ptr [rdx+28],01
+zero.exe+16DD06: 48 C7 42 1C 00 00 80 3F  - mov qword ptr [rdx+1C],3F800000
+}
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>28</ID>
+          <Description>"Invincible (Indirect Damage)"</Description>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>{ Game   : zero.exe
+  Version: 
+  Date   :
+  Author :
+
+  This script does blah blah blah
+}
+
+define(address,"zero.exe"+1AC64E)
+define(bytes,89 8F 78 02 00 00)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"zero.exe"+1AC64E)
+
+label(code)
+label(return)
+
+newmem:
+  cmp byte ptr [rdi+A],FF
+  jne return
+code:
+  mov [rdi+00000278],ecx
+  jmp return
+
+address:
+  jmp newmem
+  nop
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // mov [rdi+00000278],ecx
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: zero.exe+1AC64E
+
+zero.exe+1AC624: E8 17 71 E5 FF           - call zero.exe+3740
+zero.exe+1AC629: 44 8B 87 78 02 00 00     - mov r8d,[rdi+00000278]
+zero.exe+1AC630: 0F 57 C9                 - xorps xmm1,xmm1
+zero.exe+1AC633: 41 8B C8                 - mov ecx,r8d
+zero.exe+1AC636: 41 BF 00 00 00 00        - mov r15d,00000000
+zero.exe+1AC63C: 41 2B CE                 - sub ecx,r14d
+zero.exe+1AC63F: 0F 57 D2                 - xorps xmm2,xmm2
+zero.exe+1AC642: 45 3B C6                 - cmp r8d,r14d
+zero.exe+1AC645: F3 49 0F 2A D0           - cvtsi2ss xmm2,r8
+zero.exe+1AC64A: 41 0F 46 CF              - cmovbe ecx,r15d
+// ---------- INJECTING HERE ----------
+zero.exe+1AC64E: 89 8F 78 02 00 00        - mov [rdi+00000278],ecx
+// ---------- DONE INJECTING  ----------
+zero.exe+1AC654: 0F B7 07                 - movzx eax,word ptr [rdi]
+zero.exe+1AC657: 8B 97 74 02 00 00        - mov edx,[rdi+00000274]
+zero.exe+1AC65D: 48 05 A1 4A 00 00        - add rax,00004AA1
+zero.exe+1AC663: F3 0F 10 1D 5D 1B 27 00  - movss xmm3,[zero.exe+41E1C8]
+zero.exe+1AC66B: 4C 6B C8 2C              - imul r9,rax,2C
+zero.exe+1AC66F: 8B C1                    - mov eax,ecx
+zero.exe+1AC671: 4C 03 CD                 - add r9,rbp
+zero.exe+1AC674: F3 48 0F 2A C8           - cvtsi2ss xmm1,rax
+zero.exe+1AC679: 45 88 69 28              - mov [r9+28],r13b
+zero.exe+1AC67D: 49 C7 41 1C 00 00 80 3F  - mov qword ptr [r9+1C],3F800000
+}
+</AssemblerScript>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>26</ID>
+      <Description>"Cloak"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : zero.exe
+  Version:
+  Date   :
+  Author :
+
+  This script does blah blah blah
+}
+
+define(address,"zero.exe"+247C6A)
+define(bytes,0F 85 93 02 00 00)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"zero.exe"+247C6A)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  jmp zero.exe+247F03
+
+address:
+  jmp newmem
+  nop
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // jne zero.exe+247F03
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: zero.exe+247C6A
+
+zero.exe+247C3B: 48 C1 E8 3F              - shr rax,3F
+zero.exe+247C3F: 48 03 D0                 - add rdx,rax
+zero.exe+247C42: 4C 69 C2 98 01 00 00     - imul r8,rdx,00000198
+zero.exe+247C49: 4C 03 C5                 - add r8,rbp
+zero.exe+247C4C: 41 0F B7 80 74 01 00 00  - movzx eax,word ptr [r8+00000174]
+zero.exe+247C54: 84 C0                    - test al,al
+zero.exe+247C56: 0F 88 A7 02 00 00        - js zero.exe+247F03
+zero.exe+247C5C: 66 85 CE                 - test si,cx
+zero.exe+247C5F: 0F 84 9E 02 00 00        - je zero.exe+247F03
+zero.exe+247C65: 66 41 83 3E 00           - cmp word ptr [r14],00
+// ---------- INJECTING HERE ----------
+zero.exe+247C6A: 0F 85 93 02 00 00        - jne zero.exe+247F03
+// ---------- DONE INJECTING  ----------
+zero.exe+247C70: A8 88                    - test al,-78
+zero.exe+247C72: 0F 85 8B 02 00 00        - jne zero.exe+247F03
+zero.exe+247C78: 66 45 85 8E A2 02 00 00  - test [r14+000002A2],r9w
+zero.exe+247C80: 0F 85 7D 02 00 00        - jne zero.exe+247F03
+zero.exe+247C86: 44 8B CF                 - mov r9d,edi
+zero.exe+247C89: 48 8B F7                 - mov rsi,rdi
+zero.exe+247C8C: 84 DB                    - test bl,bl
+zero.exe+247C8E: BF 01 00 00 00           - mov edi,00000001
+zero.exe+247C93: B8 08 00 00 00           - mov eax,00000008
+zero.exe+247C98: 0F 45 F8                 - cmovne edi,eax
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>36</ID>
+      <Description>"Infinite Items"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : zero.exe
+  Version:
+  Date   :
+  Author :
+
+  This script does blah blah blah
+}
+
+define(address,"zero.exe"+27A1A1)
+define(bytes,0F B7 82 22 67 72 00)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"zero.exe"+27A1A1)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  mov eax,#70
+  jmp return
+
+address:
+  jmp newmem
+  nop 2
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // movzx eax,word ptr [rdx+00726722]
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: zero.exe+27A1A1
+
+zero.exe+27A17E: 48 8B 5C 24 30           - mov rbx,[rsp+30]
+zero.exe+27A183: 33 C0                    - xor eax,eax
+zero.exe+27A185: 48 8B 74 24 38           - mov rsi,[rsp+38]
+zero.exe+27A18A: 48 83 C4 20              - add rsp,20
+zero.exe+27A18E: 5F                       - pop rdi
+zero.exe+27A18F: C3                       - ret 
+zero.exe+27A190: 4C 8B 0D 69 8A 24 00     - mov r9,[zero.exe+4C2C00]
+zero.exe+27A197: 4C 63 D2                 - movsxd  r10,edx
+zero.exe+27A19A: 49 8B CA                 - mov rcx,r10
+zero.exe+27A19D: 4B 8D 14 91              - lea rdx,[r9+r10*4]
+// ---------- INJECTING HERE ----------
+zero.exe+27A1A1: 0F B7 82 22 67 72 00     - movzx eax,word ptr [rdx+00726722]
+// ---------- DONE INJECTING  ----------
+zero.exe+27A1A8: 41 3B C0                 - cmp eax,r8d
+zero.exe+27A1AB: 7E 11                    - jle zero.exe+27A1BE
+zero.exe+27A1AD: 66 41 2B C0              - sub ax,r8w
+zero.exe+27A1B1: 66 89 82 22 67 72 00     - mov [rdx+00726722],ax
+zero.exe+27A1B8: B8 01 00 00 00           - mov eax,00000001
+zero.exe+27A1BD: C3                       - ret 
+zero.exe+27A1BE: 75 78                    - jne zero.exe+27A238
+zero.exe+27A1C0: 48 81 F9 77 06 00 00     - cmp rcx,00000677
+zero.exe+27A1C7: 7D 4C                    - jnl zero.exe+27A215
+zero.exe+27A1C9: 4E 8D 04 95 20 67 72 00  - lea r8,[r10*4+00726720]
+}
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
