@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>29</ID>
+      <Description>"Misc"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>59</ID>
+          <Description>"Fishing Round"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>ed6_win3_DX9.exe+5953F8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>58</ID>
+          <Description>"Fishing Points"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>ed6_win3_DX9.exe+5953FC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>28</ID>
+          <Description>"Kevin Second Quartz"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>ed6_win3_DX9.exe+2AD0900</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>44</ID>
+          <Description>"# Battles"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>ed6_win3_DX9.exe+2AD5DEA</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>63</ID>
+          <Description>"# Knocked Out"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>ed6_win3_DX9.exe+2AD5DEC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>43</ID>
+          <Description>"# Victories"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>ed6_win3_DX9.exe+2AD5DEE</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>45</ID>
+          <Description>"# Fled"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>ed6_win3_DX9.exe+2AD5DF2</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>66</ID>
+          <Description>"Board Game"</Description>
+          <Options moHideChildren="1"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>65</ID>
+              <Description>"Moves"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>ed6_win3_DX9.exe+2C533A4</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>64</ID>
+          <Description>"Campanella Quiz # Incorrect Answers"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>ed6_win3_DX9.exe+2C91C8C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>61</ID>
+          <Description>"Blackjack Stars"</Description>
+          <VariableType>Byte</VariableType>
+          <Address>ed6_win3_DX9.exe+2CA84AC</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"Position"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>ed6_win3_DX9.exe+2AB7300</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1</ID>
+          <Description>"X"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>3</ID>
+          <Description>"Y"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>4</ID>
+          <Description>"Z"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+8</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>39</ID>
+      <Description>"First Party Member"</Description>
+      <DropDownList DisplayValueAsItem="1">00:Estelle
+01:Joshua
+02:Scherazard
+03:Olivier
+04:Kloe
+05:Agate
+06:Tita
+07:Zin
+08:Kevin
+09:Anelace
+0A:Josette
+0B:Richard
+0C:Mueller
+0D:Julia
+0E:Ries
+0F:Renne
+10:Deen
+11:Rais
+12:Rocco
+</DropDownList>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Byte</VariableType>
+      <Address>ed6_win3_DX9.exe+2ACD0BC</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>22</ID>
+      <Description>"Experience"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>ed6_win3_DX9.exe+2ACD130</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>57</ID>
+          <Description>"Estelle"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>21</ID>
+          <Description>"Joshua"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*1</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>52</ID>
+          <Description>"Scherazard"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*2</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>49</ID>
+          <Description>"Olivier"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*3</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>48</ID>
+          <Description>"Kloe"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>56</ID>
+          <Description>"Agate"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*5</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>47</ID>
+          <Description>"Tita"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*6</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>50</ID>
+          <Description>"Zin"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*7</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>40</ID>
+          <Description>"Kevin"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>51</ID>
+          <Description>"Anelace"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*9</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>46</ID>
+          <Description>"Josette"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*A</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>60</ID>
+          <Description>"Richard"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*B</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>42</ID>
+          <Description>"Mueller"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>41</ID>
+          <Description>"Julia"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*D</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>24</ID>
+          <Description>"Ries"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*E</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>62</ID>
+          <Description>"Renne"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*F</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>53</ID>
+          <Description>"Deen"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*10</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>54</ID>
+          <Description>"Rais"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*11</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>55</ID>
+          <Description>"Rocco"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+3C*12</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"Mira"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>ed6_win3_DX9.exe+2AD485C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"Sepith"</Description>
+      <Options moHideChildren="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <GroupHeader>1</GroupHeader>
+      <Address>ed6_win3_DX9.exe+2AD4864</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>9</ID>
+          <Description>"Earth"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>11</ID>
+          <Description>"Water"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*1</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>12</ID>
+          <Description>"Fire"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*2</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>13</ID>
+          <Description>"Wind"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*3</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14</ID>
+          <Description>"Time"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>15</ID>
+          <Description>"Space"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*5</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>16</ID>
+          <Description>"Mirage"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+4*6</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>5</ID>
+      <Description>"Camera Angle"</Description>
+      <VariableType>Float</VariableType>
+      <Address>ed6_win3_DX9.exe+2AD4F6C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>17</ID>
+      <Description>"Invincible"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : ed6_win3_DX9.exe
+  Version:
+  Date   :
+  Author :
+
+  This script does blah blah blah
+}
+
+define(address,"ed6_win3_DX9.exe"+1313F)
+define(bytes,89 8F 70 02 00 00)
+
+[ENABLE]
+
+
+assert(address,bytes)
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+  cmp byte ptr [edi+A],FF
+  jne return
+code:
+  mov [edi+00000270],ecx
+  jmp return
+
+address:
+  jmp newmem
+  nop
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // mov [edi+00000270],ecx
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: ed6_win3_DX9.exe+1313F
+
+ed6_win3_DX9.exe+13122: 56                          - push esi
+ed6_win3_DX9.exe+13123: 8B D9                       - mov ebx,ecx
+ed6_win3_DX9.exe+13125: 33 C9                       - xor ecx,ecx
+ed6_win3_DX9.exe+13127: 57                          - push edi
+ed6_win3_DX9.exe+13128: 8B 7C 24 14                 - mov edi,[esp+14]
+ed6_win3_DX9.exe+1312C: 8B AF 70 02 00 00           - mov ebp,[edi+00000270]
+ed6_win3_DX9.exe+13132: 8B D5                       - mov edx,ebp
+ed6_win3_DX9.exe+13134: 2B 54 24 18                 - sub edx,[esp+18]
+ed6_win3_DX9.exe+13138: 3B 6C 24 18                 - cmp ebp,[esp+18]
+ed6_win3_DX9.exe+1313C: 0F 47 CA                    - cmova ecx,edx
+// ---------- INJECTING HERE ----------
+ed6_win3_DX9.exe+1313F: 89 8F 70 02 00 00           - mov [edi+00000270],ecx
+// ---------- DONE INJECTING  ----------
+ed6_win3_DX9.exe+13145: 0F B7 07                    - movzx eax,word ptr [edi]
+ed6_win3_DX9.exe+13148: 6B F0 2C                    - imul esi,eax,2C
+ed6_win3_DX9.exe+1314B: 8B C5                       - mov eax,ebp
+ed6_win3_DX9.exe+1314D: 66 0F 6E C1                 - movd xmm0,ecx
+ed6_win3_DX9.exe+13151: F3 0F E6 C0                 - cvtdq2pd xmm0,xmm0
+ed6_win3_DX9.exe+13155: C1 E9 1F                    - shr ecx,1F
+ed6_win3_DX9.exe+13158: C1 E8 1F                    - shr eax,1F
+ed6_win3_DX9.exe+1315B: 8B 97 6C 02 00 00           - mov edx,[edi+0000026C]
+ed6_win3_DX9.exe+13161: C6 84 1E CC 1D 0A 00 01     - mov byte ptr [esi+ebx+000A1DCC],01
+ed6_win3_DX9.exe+13169: F2 0F 58 04 CD 00 57 61 00  - addsd xmm0,[ecx*8+ed6_win3_DX9.exe+215700]
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"Infinite Items"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : ed6_win3_DX9.exe
+  Version:
+  Date   :
+  Author :
+
+  This script does blah blah blah
+}
+
+define(address,"ed6_win3_DX9.exe"+15A810)
+define(bytes,0F B7 04 8D 9E 0B ED 02)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  mov eax,#70
+  jmp return
+
+address:
+  jmp newmem
+  nop 3
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // movzx eax,word ptr [ecx*4+ed6_win3_DX9.exe+2AD0B9E]
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: ed6_win3_DX9.exe+15A810
+
+ed6_win3_DX9.exe+15A806: CC                       - int 3 
+ed6_win3_DX9.exe+15A807: CC                       - int 3 
+ed6_win3_DX9.exe+15A808: CC                       - int 3 
+ed6_win3_DX9.exe+15A809: CC                       - int 3 
+ed6_win3_DX9.exe+15A80A: CC                       - int 3 
+ed6_win3_DX9.exe+15A80B: CC                       - int 3 
+ed6_win3_DX9.exe+15A80C: CC                       - int 3 
+ed6_win3_DX9.exe+15A80D: CC                       - int 3 
+ed6_win3_DX9.exe+15A80E: CC                       - int 3 
+ed6_win3_DX9.exe+15A80F: CC                       - int 3 
+// ---------- INJECTING HERE ----------
+ed6_win3_DX9.exe+15A810: 0F B7 04 8D 9E 0B ED 02  - movzx eax,word ptr [ecx*4+ed6_win3_DX9.exe+2AD0B9E]
+// ---------- DONE INJECTING  ----------
+ed6_win3_DX9.exe+15A818: 56                       - push esi
+ed6_win3_DX9.exe+15A819: 3B C2                    - cmp eax,edx
+ed6_win3_DX9.exe+15A81B: 7E 0E                    - jle ed6_win3_DX9.exe+15A82B
+ed6_win3_DX9.exe+15A81D: 2B C2                    - sub eax,edx
+ed6_win3_DX9.exe+15A81F: 66 89 04 8D 9E 0B ED 02  - mov [ecx*4+ed6_win3_DX9.exe+2AD0B9E],ax
+ed6_win3_DX9.exe+15A827: B0 01                    - mov al,01
+ed6_win3_DX9.exe+15A829: 5E                       - pop esi
+ed6_win3_DX9.exe+15A82A: C3                       - ret 
+ed6_win3_DX9.exe+15A82B: 75 49                    - jne ed6_win3_DX9.exe+15A876
+ed6_win3_DX9.exe+15A82D: 81 F9 07 07 00 00        - cmp ecx,00000707
+}
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
