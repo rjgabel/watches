@@ -435,6 +435,46 @@
       <Address>main.dll+B4DFAC</Address>
     </CheatEntry>
     <CheatEntry>
+      <ID>63</ID>
+      <Description>"Infinite Minigame Time"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address1,"main.dll"+407AD0)
+define(bytes1,01 91 84 00 00 00)
+define(address2,"main.dll"+407BB2)
+define(bytes2,29 81 84 00 00 00)
+[ENABLE]
+assert(address1,bytes1)
+assert(address2,bytes2)
+address1:
+  nop 6
+address2:
+  nop 6
+[DISABLE]
+address1:
+  db bytes1
+  // add [rcx+00000084],edx
+address2:
+  db bytes2
+  // sub [rcx+00000084],eax
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>65</ID>
+      <Description>"Infinite Items"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"main.dll"+4967DD)
+define(bytes,66 41 89 3C 06)
+[ENABLE]
+assert(address,bytes)
+address:
+  nop 5
+[DISABLE]
+address:
+  db bytes
+  // mov [r14+rax],di
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
       <ID>5</ID>
       <Description>"Disable Day-Night Timer"</Description>
       <VariableType>Auto Assembler Script</VariableType>
@@ -486,57 +526,6 @@ main.dll+4AEE0D: C1 EA 14              - shr edx,14
 }
 </AssemblerScript>
     </CheatEntry>
-    <CheatEntry>
-      <ID>63</ID>
-      <Description>"Infinite Minigame Time"</Description>
-      <VariableType>Auto Assembler Script</VariableType>
-      <AssemblerScript>define(address1,"main.dll"+407AD0)
-define(bytes1,01 91 84 00 00 00)
-define(address2,"main.dll"+407BB2)
-define(bytes2,29 81 84 00 00 00)
-[ENABLE]
-assert(address1,bytes1)
-assert(address2,bytes2)
-address1:
-  nop 6
-address2:
-  nop 6
-[DISABLE]
-address1:
-  db bytes1
-  // add [rcx+00000084],edx
-address2:
-  db bytes2
-  // sub [rcx+00000084],eax
-</AssemblerScript>
-    </CheatEntry>
   </CheatEntries>
-  <CheatCodes>
-    <CodeEntry>
-      <Description>Infinite Items</Description>
-      <AddressString>main.dll+4967DD</AddressString>
-      <Before>
-        <Byte>48</Byte>
-        <Byte>8B</Byte>
-        <Byte>6C</Byte>
-        <Byte>24</Byte>
-        <Byte>40</Byte>
-      </Before>
-      <Actual>
-        <Byte>66</Byte>
-        <Byte>41</Byte>
-        <Byte>89</Byte>
-        <Byte>3C</Byte>
-        <Byte>06</Byte>
-      </Actual>
-      <After>
-        <Byte>48</Byte>
-        <Byte>8B</Byte>
-        <Byte>7C</Byte>
-        <Byte>24</Byte>
-        <Byte>48</Byte>
-      </After>
-    </CodeEntry>
-  </CheatCodes>
   <UserdefinedSymbols/>
 </CheatTable>
