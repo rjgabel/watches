@@ -26,6 +26,12 @@
               <VariableType>2 Bytes</VariableType>
               <Address>main.dll+B74CD4</Address>
             </CheatEntry>
+            <CheatEntry>
+              <ID>40</ID>
+              <Description>"N. Ryoshima"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>main.dll+B74FB4</Address>
+            </CheatEntry>
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
@@ -154,6 +160,160 @@
           <VariableType>2 Bytes</VariableType>
           <Address>main.dll+B207D2</Address>
         </CheatEntry>
+        <CheatEntry>
+          <ID>41</ID>
+          <Description>"Starfish"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B20814</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>42</ID>
+          <Description>"Moray"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B207FA</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>43</ID>
+          <Description>"Loggerhead Turtle"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B20818</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>44</ID>
+          <Description>"Sunfish"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B207F4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>62</ID>
+          <Description>"Nautilus"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B2080C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>45</ID>
+          <Description>"Clownfish"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B207E2</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>46</ID>
+          <Description>"Scallop"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B2080A</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>47</ID>
+          <Description>"Sea Horse"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B2081A</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>48</ID>
+          <Description>"Blowfish"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B20810</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>49</ID>
+          <Description>"Monkfish"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B207FE</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>50</ID>
+          <Description>"Octopus"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B2081C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>51</ID>
+          <Description>"Yellowtail"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B207E6</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>52</ID>
+          <Description>"Flying Fish"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B207F0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>53</ID>
+          <Description>"Squid"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B2081E</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>54</ID>
+          <Description>"Bonito"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B207E4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>55</ID>
+          <Description>"Red Snapper"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B207D4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>56</ID>
+          <Description>"Lobster"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B20806</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>57</ID>
+          <Description>"Striped Snapper"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B207D6</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>58</ID>
+          <Description>"Supreme Tuna"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B207D0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>59</ID>
+          <Description>"Manta"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B2080E</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>60</ID>
+          <Description>"Oarfish"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B207FC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>61</ID>
+          <Description>"Marlin"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B20816</Address>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
@@ -164,7 +324,7 @@
       <CheatEntries>
         <CheatEntry>
           <ID>10</ID>
-          <Description>"No description"</Description>
+          <Description>"X"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
           <Address>main.dll+B6B2D0</Address>
@@ -175,7 +335,7 @@
         </CheatEntry>
         <CheatEntry>
           <ID>11</ID>
-          <Description>"No description"</Description>
+          <Description>"Y"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
           <Address>main.dll+B6B2D0</Address>
@@ -186,7 +346,7 @@
         </CheatEntry>
         <CheatEntry>
           <ID>12</ID>
-          <Description>"No description"</Description>
+          <Description>"Z"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Float</VariableType>
           <Address>main.dll+B6B2D0</Address>
@@ -197,7 +357,7 @@
         </CheatEntry>
         <CheatEntry>
           <ID>15</ID>
-          <Description>"No description"</Description>
+          <Description>"Noclip (02)"</Description>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
@@ -318,6 +478,30 @@ main.dll+4AEE05: B8 B1 7C 21 95        - mov eax,95217CB1
 main.dll+4AEE0A: 41 F7 E0              - mul r8d
 main.dll+4AEE0D: C1 EA 14              - shr edx,14
 }
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>63</ID>
+      <Description>"Infinite Minigame Time"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address1,"main.dll"+407AD0)
+define(bytes1,01 91 84 00 00 00)
+define(address2,"main.dll"+407BB2)
+define(bytes2,29 81 84 00 00 00)
+[ENABLE]
+assert(address1,bytes1)
+assert(address2,bytes2)
+address1:
+  nop 6
+address2:
+  nop 6
+[DISABLE]
+address1:
+  db bytes1
+  // add [rcx+00000084],edx
+address2:
+  db bytes2
+  // sub [rcx+00000084],eax
 </AssemblerScript>
     </CheatEntry>
   </CheatEntries>
