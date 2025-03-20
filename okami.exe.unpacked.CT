@@ -27,6 +27,12 @@
               <Address>main.dll+B74CD4</Address>
             </CheatEntry>
             <CheatEntry>
+              <ID>64</ID>
+              <Description>"Kamui"</Description>
+              <VariableType>2 Bytes</VariableType>
+              <Address>main.dll+B74E44</Address>
+            </CheatEntry>
+            <CheatEntry>
               <ID>40</ID>
               <Description>"N. Ryoshima"</Description>
               <VariableType>2 Bytes</VariableType>
