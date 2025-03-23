@@ -372,6 +372,13 @@
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
+      <ID>37</ID>
+      <Description>"Minigame Timer"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>main.dll+B1DC5C</Address>
+    </CheatEntry>
+    <CheatEntry>
       <ID>2</ID>
       <Description>"Ink"</Description>
       <ShowAsSigned>0</ShowAsSigned>
@@ -401,13 +408,6 @@
       <Address>main.dll+B20830</Address>
     </CheatEntry>
     <CheatEntry>
-      <ID>37</ID>
-      <Description>"Minigame Timer"</Description>
-      <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
-      <Address>main.dll+B1DC5C</Address>
-    </CheatEntry>
-    <CheatEntry>
       <ID>1</ID>
       <Description>"Astral Pouch"</Description>
       <ShowAsSigned>0</ShowAsSigned>
@@ -433,6 +433,14 @@
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>main.dll+B4DFAC</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>66</ID>
+      <Description>"Map"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>main.dll+B6B240</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>63</ID>
