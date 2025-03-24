@@ -442,6 +442,14 @@
       <Address>main.dll+B4DFAC</Address>
     </CheatEntry>
     <CheatEntry>
+      <ID>69</ID>
+      <Description>"Warp Map"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>main.dll+B65E74</Address>
+    </CheatEntry>
+    <CheatEntry>
       <ID>66</ID>
       <Description>"Map"</Description>
       <ShowAsHex>1</ShowAsHex>
