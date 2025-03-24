@@ -350,6 +350,14 @@
           <Address>main.dll+B65E6C</Address>
         </CheatEntry>
         <CheatEntry>
+          <ID>76</ID>
+          <Description>"???"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>main.dll+B65E70</Address>
+        </CheatEntry>
+        <CheatEntry>
           <ID>71</ID>
           <Description>"Warp Map"</Description>
           <ShowAsHex>1</ShowAsHex>
@@ -358,12 +366,12 @@
           <Address>main.dll+B65E74</Address>
         </CheatEntry>
         <CheatEntry>
-          <ID>66</ID>
-          <Description>"Map"</Description>
+          <ID>77</ID>
+          <Description>"???"</Description>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>2 Bytes</VariableType>
-          <Address>main.dll+B6B240</Address>
+          <Address>main.dll+B65E76</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>68</ID>
@@ -495,6 +503,14 @@
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>main.dll+B4DFAC</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>66</ID>
+      <Description>"Map"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>main.dll+B6B240</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>63</ID>
