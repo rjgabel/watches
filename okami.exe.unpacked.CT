@@ -352,9 +352,8 @@
         <CheatEntry>
           <ID>76</ID>
           <Description>"???"</Description>
-          <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
+          <VariableType>Float</VariableType>
           <Address>main.dll+B65E70</Address>
         </CheatEntry>
         <CheatEntry>
