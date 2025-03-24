@@ -323,6 +323,61 @@
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
+      <ID>72</ID>
+      <Description>"Warp"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>73</ID>
+          <Description>"X"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>main.dll+B65E64</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>74</ID>
+          <Description>"Y"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>main.dll+B65E68</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>75</ID>
+          <Description>"Z"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>main.dll+B65E6C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>71</ID>
+          <Description>"Warp Map"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B65E74</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>66</ID>
+          <Description>"Map"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>main.dll+B6B240</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>68</ID>
+          <Description>"Reload Map"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>main.dll+B6B2AF</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
       <ID>14</ID>
       <Description>"Position"</Description>
       <Options moHideChildren="1"/>
@@ -440,32 +495,6 @@
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>2 Bytes</VariableType>
       <Address>main.dll+B4DFAC</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>69</ID>
-      <Description>"Warp Map"</Description>
-      <ShowAsHex>1</ShowAsHex>
-      <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>2 Bytes</VariableType>
-      <Address>main.dll+B65E74</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>66</ID>
-      <Description>"Map"</Description>
-      <ShowAsHex>1</ShowAsHex>
-      <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>2 Bytes</VariableType>
-      <Address>main.dll+B6B240</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>68</ID>
-      <Description>"Reload Map"</Description>
-      <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>Binary</VariableType>
-      <BitStart>1</BitStart>
-      <BitLength>1</BitLength>
-      <ShowAsBinary>0</ShowAsBinary>
-      <Address>main.dll+B6B2AF</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>63</ID>
