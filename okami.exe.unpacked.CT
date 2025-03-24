@@ -450,6 +450,16 @@
       <Address>main.dll+B6B240</Address>
     </CheatEntry>
     <CheatEntry>
+      <ID>68</ID>
+      <Description>"Reload Map"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Binary</VariableType>
+      <BitStart>1</BitStart>
+      <BitLength>1</BitLength>
+      <ShowAsBinary>0</ShowAsBinary>
+      <Address>main.dll+B6B2AF</Address>
+    </CheatEntry>
+    <CheatEntry>
       <ID>63</ID>
       <Description>"Infinite Minigame Time"</Description>
       <VariableType>Auto Assembler Script</VariableType>
