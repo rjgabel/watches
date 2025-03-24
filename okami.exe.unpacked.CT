@@ -408,6 +408,13 @@
       <Address>main.dll+B20830</Address>
     </CheatEntry>
     <CheatEntry>
+      <ID>67</ID>
+      <Description>"Health"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>main.dll+B4DF90</Address>
+    </CheatEntry>
+    <CheatEntry>
       <ID>1</ID>
       <Description>"Astral Pouch"</Description>
       <ShowAsSigned>0</ShowAsSigned>
