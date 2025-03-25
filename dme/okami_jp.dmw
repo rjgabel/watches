@@ -1,0 +1,11 @@
+{
+    "watchList": [
+        {
+            "address": "807F5FA8",
+            "baseIndex": 1,
+            "label": "Time of Day",
+            "typeIndex": 2,
+            "unsigned": true
+        }
+    ]
+}
