@@ -1,6 +1,13 @@
 {
     "watchList": [
         {
+            "address": "8058B3B8",
+            "baseIndex": 1,
+            "label": "Update Time of Day (90a40260, 60000000)",
+            "typeIndex": 2,
+            "unsigned": false
+        },
+        {
             "address": "807F5FA8",
             "baseIndex": 1,
             "label": "Time of Day",
