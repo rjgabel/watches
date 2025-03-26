@@ -8,6 +8,13 @@
             "unsigned": false
         },
         {
+            "address": "807F5DE6",
+            "baseIndex": 0,
+            "label": "Demon Fangs",
+            "typeIndex": 1,
+            "unsigned": true
+        },
+        {
             "address": "807F5FA8",
             "baseIndex": 1,
             "label": "Time of Day",
