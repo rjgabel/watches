@@ -20,6 +20,36 @@
             "label": "Map",
             "typeIndex": 1,
             "unsigned": true
+        },
+        {
+            "address": "809CA5F8",
+            "baseIndex": 0,
+            "label": "Respawn X",
+            "pointerOffsets": [
+                "3D0"
+            ],
+            "typeIndex": 3,
+            "unsigned": false
+        },
+        {
+            "address": "809CA5F8",
+            "baseIndex": 0,
+            "label": "Respawn Y",
+            "pointerOffsets": [
+                "3D4"
+            ],
+            "typeIndex": 3,
+            "unsigned": false
+        },
+        {
+            "address": "809CA5F8",
+            "baseIndex": 0,
+            "label": "Respawn Z",
+            "pointerOffsets": [
+                "3D8"
+            ],
+            "typeIndex": 3,
+            "unsigned": false
         }
     ]
 }
