@@ -13,6 +13,13 @@
             "label": "Time of Day",
             "typeIndex": 2,
             "unsigned": true
+        },
+        {
+            "address": "809CA588",
+            "baseIndex": 1,
+            "label": "Map",
+            "typeIndex": 1,
+            "unsigned": true
         }
     ]
 }
