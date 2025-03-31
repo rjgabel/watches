@@ -11,6 +11,42 @@
         <Offset>1901A8</Offset>
       </Offsets>
     </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"Infinite Items"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"kuro.exe"+2EDAB8)
+define(bytes,44 88 82 78 70 0B 00)
+
+[ENABLE]
+
+assert(address,bytes)
+alloc(newmem,$1000,"kuro.exe"+2EDAB8)
+
+label(code)
+label(return)
+
+newmem:
+  mov r8b,99
+code:
+  mov [rdx+000B7078],r8b
+  jmp return
+
+address:
+  jmp newmem
+  nop 2
+return:
+
+[DISABLE]
+
+address:
+  db bytes
+  // mov [rdx+000B7078],r8b
+
+dealloc(newmem)
+
+</AssemblerScript>
+    </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
 </CheatTable>
