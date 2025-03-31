@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CheatTable CheatEngineTableVersion="46">
-  <CheatEntries/>
+  <CheatEntries>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Mira"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>kuro.exe+914A90</Address>
+      <Offsets>
+        <Offset>1901A8</Offset>
+      </Offsets>
+    </CheatEntry>
+  </CheatEntries>
   <UserdefinedSymbols/>
 </CheatTable>
