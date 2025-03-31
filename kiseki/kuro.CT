@@ -4,6 +4,7 @@
     <CheatEntry>
       <ID>8</ID>
       <Description>"Base"</Description>
+      <LastState Value="0000054D60710000" RealAddress="7FF7CF9D4A90"/>
       <ShowAsHex>1</ShowAsHex>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>8 Bytes</VariableType>
@@ -12,6 +13,7 @@
     <CheatEntry>
       <ID>1</ID>
       <Description>"Mira"</Description>
+      <LastState Value="9999999" RealAddress="54D608A01A8"/>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
       <Address>kuro.exe+914A90</Address>
@@ -22,6 +24,7 @@
     <CheatEntry>
       <ID>3</ID>
       <Description>"Infinite Items"</Description>
+      <LastState/>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript>define(address,"kuro.exe"+2EDAB8)
 define(bytes,44 88 82 78 70 0B 00)
@@ -58,6 +61,8 @@ dealloc(newmem)
     <CheatEntry>
       <ID>12</ID>
       <Description>"Van Extra Stats"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" Activated="1" RealAddress="54D607ABCEC"/>
       <ShowAsSigned>0</ShowAsSigned>
       <GroupHeader>1</GroupHeader>
       <Address>kuro.exe+914A90</Address>
@@ -68,6 +73,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>13</ID>
           <Description>"HP"</Description>
+          <LastState Value="9999999" RealAddress="54D607ABD94"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>+A8</Address>
@@ -75,15 +81,34 @@ dealloc(newmem)
         <CheatEntry>
           <ID>14</ID>
           <Description>"STR"</Description>
+          <LastState Value="99999" RealAddress="54D607ABD98"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>+AC</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>18</ID>
+          <Description>"DEF"</Description>
+          <LastState Value="99999" RealAddress="54D607ABD9C"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+B0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>19</ID>
+          <Description>"ATS"</Description>
+          <LastState Value="99999" RealAddress="54D607ABDA0"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+B4</Address>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
       <ID>15</ID>
       <Description>"Agnes Extra Stats"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="54D607AC0D4"/>
       <ShowAsSigned>0</ShowAsSigned>
       <GroupHeader>1</GroupHeader>
       <Address>kuro.exe+914A90</Address>
@@ -94,6 +119,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>16</ID>
           <Description>"HP"</Description>
+          <LastState Value="9999999" RealAddress="54D607AC17C"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>+A8</Address>
@@ -101,6 +127,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>17</ID>
           <Description>"STR"</Description>
+          <LastState Value="99999" RealAddress="54D607AC180"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>+AC</Address>
