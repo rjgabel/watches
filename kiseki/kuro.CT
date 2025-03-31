@@ -94,6 +94,13 @@ dealloc(newmem)
           <VariableType>4 Bytes</VariableType>
           <Address>+B4</Address>
         </CheatEntry>
+        <CheatEntry>
+          <ID>20</ID>
+          <Description>"ADF"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+B8</Address>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
