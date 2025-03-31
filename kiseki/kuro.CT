@@ -56,24 +56,56 @@ dealloc(newmem)
 </AssemblerScript>
     </CheatEntry>
     <CheatEntry>
-      <ID>9</ID>
-      <Description>"Van Extra HP"</Description>
+      <ID>12</ID>
+      <Description>"Van Extra Stats"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <GroupHeader>1</GroupHeader>
       <Address>kuro.exe+914A90</Address>
       <Offsets>
-        <Offset>9BD94</Offset>
+        <Offset>9BCEC</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>13</ID>
+          <Description>"HP"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+A8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14</ID>
+          <Description>"STR"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+AC</Address>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>10</ID>
-      <Description>"Van Extra STR"</Description>
+      <ID>15</ID>
+      <Description>"Agnes Extra Stats"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <GroupHeader>1</GroupHeader>
       <Address>kuro.exe+914A90</Address>
       <Offsets>
-        <Offset>9BD98</Offset>
+        <Offset>9C0D4</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>16</ID>
+          <Description>"HP"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+A8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>17</ID>
+          <Description>"STR"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+AC</Address>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
