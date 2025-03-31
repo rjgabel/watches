@@ -10,6 +10,83 @@
       <Address>kuro.exe+914A90</Address>
     </CheatEntry>
     <CheatEntry>
+      <ID>25</ID>
+      <Description>"Extra Stats"</Description>
+      <Options moHideChildren="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+alloc(extraStatsChar,$1000)
+extraStatsChar:
+ dq 0
+registerSymbol(extraStatsChar)
+[DISABLE]
+dealloc(extraStatsChar)
+unregisterSymbol(extraStatsChar)
+</AssemblerScript>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>26</ID>
+          <Description>"Character"</Description>
+          <DropDownList DisplayValueAsItem="1">0:Van
+1:Agnes
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>8 Bytes</VariableType>
+          <Address>extraStatsChar</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>27</ID>
+          <Description>"HP"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>kuro.exe+914A90</Address>
+          <Offsets>
+            <Offset>9BCEC+3E8*[extraStatsChar]+A8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>28</ID>
+          <Description>"STR"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>kuro.exe+914A90</Address>
+          <Offsets>
+            <Offset>9BCEC+3E8*[extraStatsChar]+AC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>29</ID>
+          <Description>"DEF"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>kuro.exe+914A90</Address>
+          <Offsets>
+            <Offset>9BCEC+3E8*[extraStatsChar]+B0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>30</ID>
+          <Description>"ATS"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>kuro.exe+914A90</Address>
+          <Offsets>
+            <Offset>9BCEC+3E8*[extraStatsChar]+B4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>31</ID>
+          <Description>"ADF"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>kuro.exe+914A90</Address>
+          <Offsets>
+            <Offset>9BCEC+3E8*[extraStatsChar]+B8</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
       <ID>1</ID>
       <Description>"Mira"</Description>
       <ShowAsSigned>0</ShowAsSigned>
@@ -54,102 +131,6 @@ address:
 dealloc(newmem)
 
 </AssemblerScript>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>12</ID>
-      <Description>"Van Extra Stats"</Description>
-      <Options moHideChildren="1"/>
-      <ShowAsSigned>0</ShowAsSigned>
-      <GroupHeader>1</GroupHeader>
-      <Address>kuro.exe+914A90</Address>
-      <Offsets>
-        <Offset>9BCEC</Offset>
-      </Offsets>
-      <CheatEntries>
-        <CheatEntry>
-          <ID>13</ID>
-          <Description>"HP"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>+A8</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>14</ID>
-          <Description>"STR"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>+AC</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>18</ID>
-          <Description>"DEF"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>+B0</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>19</ID>
-          <Description>"ATS"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>+B4</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>20</ID>
-          <Description>"ADF"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>+B8</Address>
-        </CheatEntry>
-      </CheatEntries>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>15</ID>
-      <Description>"Agnes Extra Stats"</Description>
-      <Options moHideChildren="1"/>
-      <ShowAsSigned>0</ShowAsSigned>
-      <GroupHeader>1</GroupHeader>
-      <Address>kuro.exe+914A90</Address>
-      <Offsets>
-        <Offset>9C0D4</Offset>
-      </Offsets>
-      <CheatEntries>
-        <CheatEntry>
-          <ID>16</ID>
-          <Description>"HP"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>+A8</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>17</ID>
-          <Description>"STR"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>+AC</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>21</ID>
-          <Description>"DEF"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>+B0</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>22</ID>
-          <Description>"ATS"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>+B4</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>23</ID>
-          <Description>"ADF"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>+B8</Address>
-        </CheatEntry>
-      </CheatEntries>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
