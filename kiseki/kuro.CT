@@ -21,7 +21,7 @@
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Binary</VariableType>
           <BitStart>0</BitStart>
-          <BitLength>23</BitLength>
+          <BitLength>24</BitLength>
           <ShowAsBinary>0</ShowAsBinary>
           <Address>kuro.exe+914A98</Address>
           <Offsets>
