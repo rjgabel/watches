@@ -17,6 +17,19 @@
       <CheatEntries>
         <CheatEntry>
           <ID>35</ID>
+          <Description>"SCLM Supports Activated"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>24</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>kuro.exe+914A98</Address>
+          <Offsets>
+            <Offset>11280</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>53</ID>
           <Description>"Mira Earned"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Binary</VariableType>
@@ -25,7 +38,7 @@
           <ShowAsBinary>0</ShowAsBinary>
           <Address>kuro.exe+914A98</Address>
           <Offsets>
-            <Offset>000112A4</Offset>
+            <Offset>112A4</Offset>
           </Offsets>
         </CheatEntry>
       </CheatEntries>
