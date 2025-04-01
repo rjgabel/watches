@@ -134,12 +134,16 @@ label(return)
 
 newmem:
   pushf
-  mov r8b,#99
+  push rax
+  mov r8d,#99
+  mov eax,#250
   // U-Material
   cmp r11d,2D
-  jne l1
-  mov r8b,#250
-l1:
+  cmove r8d,eax
+  // U-Material+
+  cmp r11d,2E
+  cmove r8d,eax
+  pop rax
   popf
 code:
   mov [rdx+000B7078],r8b
