@@ -10,6 +10,27 @@
       <Address>kuro.exe+914A90</Address>
     </CheatEntry>
     <CheatEntry>
+      <ID>36</ID>
+      <Description>"Achievements"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>35</ID>
+          <Description>"Mira Earned"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>20</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>kuro.exe+914A98</Address>
+          <Offsets>
+            <Offset>000112A4</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
       <ID>25</ID>
       <Description>"Extra Stats"</Description>
       <Options moHideChildren="1"/>
