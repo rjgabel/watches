@@ -17,6 +17,19 @@
       <CheatEntries>
         <CheatEntry>
           <ID>35</ID>
+          <Description>"SCLM Chains Activated"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>30</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>kuro.exe+914A98</Address>
+          <Offsets>
+            <Offset>1127C</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>59</ID>
           <Description>"SCLM Supports Activated"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Binary</VariableType>
@@ -43,7 +56,7 @@
         </CheatEntry>
         <CheatEntry>
           <ID>57</ID>
-          <Description>"Enemies Felled on the Field"</Description>
+          <Description>"Enemies Slain"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Binary</VariableType>
           <BitStart>0</BitStart>
