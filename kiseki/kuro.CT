@@ -42,6 +42,19 @@
           </Offsets>
         </CheatEntry>
         <CheatEntry>
+          <ID>57</ID>
+          <Description>"Enemies Felled on the Field"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>30</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>kuro.exe+914A98</Address>
+          <Offsets>
+            <Offset>1129C</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
           <ID>53</ID>
           <Description>"Mira Earned"</Description>
           <ShowAsSigned>0</ShowAsSigned>
@@ -202,6 +215,13 @@ unregisterSymbol(extraStatsChar)
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>+18</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>55</ID>
+          <Description>"Mass"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+1C</Address>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
