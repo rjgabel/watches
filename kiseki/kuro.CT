@@ -56,8 +56,18 @@ unregisterSymbol(extraStatsChar)
           <Address>extraStatsChar</Address>
         </CheatEntry>
         <CheatEntry>
-          <ID>27</ID>
-          <Description>"HP"</Description>
+          <ID>49</ID>
+          <Description>"EXP"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>kuro.exe+914A90</Address>
+          <Offsets>
+            <Offset>9BCEC+3E8*[extraStatsChar]+8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>50</ID>
+          <Description>"Extra HP"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>kuro.exe+914A90</Address>
@@ -67,7 +77,7 @@ unregisterSymbol(extraStatsChar)
         </CheatEntry>
         <CheatEntry>
           <ID>28</ID>
-          <Description>"STR"</Description>
+          <Description>"Extra STR"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>kuro.exe+914A90</Address>
@@ -77,7 +87,7 @@ unregisterSymbol(extraStatsChar)
         </CheatEntry>
         <CheatEntry>
           <ID>29</ID>
-          <Description>"DEF"</Description>
+          <Description>"Extra DEF"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>kuro.exe+914A90</Address>
@@ -87,7 +97,7 @@ unregisterSymbol(extraStatsChar)
         </CheatEntry>
         <CheatEntry>
           <ID>30</ID>
-          <Description>"ATS"</Description>
+          <Description>"Extra ATS"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>kuro.exe+914A90</Address>
@@ -97,7 +107,7 @@ unregisterSymbol(extraStatsChar)
         </CheatEntry>
         <CheatEntry>
           <ID>31</ID>
-          <Description>"ADF"</Description>
+          <Description>"Extra ADF"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>kuro.exe+914A90</Address>
