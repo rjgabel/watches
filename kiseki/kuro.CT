@@ -59,7 +59,7 @@ unregisterSymbol(extraStatsChar)
           <ID>49</ID>
           <Description>"EXP"</Description>
           <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>2 Bytes</VariableType>
+          <VariableType>4 Bytes</VariableType>
           <Address>kuro.exe+914A90</Address>
           <Offsets>
             <Offset>9BCEC+3E8*[extraStatsChar]+8</Offset>
