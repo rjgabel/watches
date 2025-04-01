@@ -118,7 +118,7 @@ unregisterSymbol(extraStatsChar)
       </Offsets>
     </CheatEntry>
     <CheatEntry>
-      <ID>3</ID>
+      <ID>37</ID>
       <Description>"Infinite Items"</Description>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript>define(address,"kuro.exe"+2EDAB8)
@@ -133,7 +133,14 @@ label(code)
 label(return)
 
 newmem:
+  pushf
   mov r8b,#99
+  // U-Material
+  cmp r11d,2D
+  jne l1
+  mov r8b,#250
+l1:
+  popf
 code:
   mov [rdx+000B7078],r8b
   jmp return
