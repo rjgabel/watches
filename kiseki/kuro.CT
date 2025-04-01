@@ -32,7 +32,7 @@
     </CheatEntry>
     <CheatEntry>
       <ID>25</ID>
-      <Description>"Extra Stats"</Description>
+      <Description>"Stats"</Description>
       <Options moHideChildren="1"/>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript>[ENABLE]
