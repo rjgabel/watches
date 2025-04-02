@@ -178,7 +178,7 @@
       <Options moHideChildren="1"/>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript>[ENABLE]
-alloc(extraStatsChar,$1000)
+alloc(extraStatsChar,8)
 extraStatsChar:
  dq 0
 registerSymbol(extraStatsChar)
@@ -265,7 +265,7 @@ unregisterSymbol(extraStatsChar)
       <Options moHideChildren="1"/>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript>[ENABLE]
-alloc(curHoloCore,$1000)
+alloc(curHoloCore,8)
 curHoloCore:
  dq 0
 registerSymbol(curHoloCore)
