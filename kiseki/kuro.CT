@@ -81,6 +81,19 @@
           </Offsets>
         </CheatEntry>
         <CheatEntry>
+          <ID>63</ID>
+          <Description>"Enemies Felled on the Field"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>30</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>kuro.exe+914A98</Address>
+          <Offsets>
+            <Offset>112A0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
           <ID>53</ID>
           <Description>"Mira Earned"</Description>
           <ShowAsSigned>0</ShowAsSigned>
