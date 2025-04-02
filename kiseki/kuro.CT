@@ -260,6 +260,52 @@ unregisterSymbol(extraStatsChar)
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
+      <ID>83</ID>
+      <Description>"Holo Core"</Description>
+      <Options moHideChildren="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+alloc(curHoloCore,$1000)
+curHoloCore:
+ dq 0
+registerSymbol(curHoloCore)
+[DISABLE]
+dealloc(curHoloCore)
+unregisterSymbol(curHoloCore)
+</AssemblerScript>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>84</ID>
+          <Description>"Selected"</Description>
+          <DropDownList DisplayValueAsItem="1">0:Mare
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>8 Bytes</VariableType>
+          <Address>curHoloCore</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>86</ID>
+          <Description>"Level"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>kuro.exe+914A90</Address>
+          <Offsets>
+            <Offset>BBE98+8*[curHoloCore]</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>87</ID>
+          <Description>"EXP"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>kuro.exe+914A90</Address>
+          <Offsets>
+            <Offset>BBE98+8*[curHoloCore]+4</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
       <ID>41</ID>
       <Description>"Sepith"</Description>
       <Options moHideChildren="1"/>
