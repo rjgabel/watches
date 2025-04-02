@@ -55,6 +55,19 @@
           </Offsets>
         </CheatEntry>
         <CheatEntry>
+          <ID>75</ID>
+          <Description>"S-Crafts Popped"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>30</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>kuro.exe+914A98</Address>
+          <Offsets>
+            <Offset>11288</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
           <ID>54</ID>
           <Description>"Damage Dealt"</Description>
           <ShowAsSigned>0</ShowAsSigned>
