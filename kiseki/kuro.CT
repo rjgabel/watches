@@ -106,6 +106,19 @@
             <Offset>112A4</Offset>
           </Offsets>
         </CheatEntry>
+        <CheatEntry>
+          <ID>65</ID>
+          <Description>"Shard Skills Activated"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>30</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>kuro.exe+914A98</Address>
+          <Offsets>
+            <Offset>112AC</Offset>
+          </Offsets>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
