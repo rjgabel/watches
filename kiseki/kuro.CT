@@ -184,7 +184,7 @@ unregisterSymbol(extraStatsChar)
         <CheatEntry>
           <ID>50</ID>
           <Description>"Extra HP"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
+          <ShowAsSigned>1</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>kuro.exe+914A90</Address>
           <Offsets>
@@ -194,7 +194,7 @@ unregisterSymbol(extraStatsChar)
         <CheatEntry>
           <ID>28</ID>
           <Description>"Extra STR"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
+          <ShowAsSigned>1</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>kuro.exe+914A90</Address>
           <Offsets>
@@ -204,7 +204,7 @@ unregisterSymbol(extraStatsChar)
         <CheatEntry>
           <ID>29</ID>
           <Description>"Extra DEF"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
+          <ShowAsSigned>1</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>kuro.exe+914A90</Address>
           <Offsets>
@@ -214,7 +214,7 @@ unregisterSymbol(extraStatsChar)
         <CheatEntry>
           <ID>30</ID>
           <Description>"Extra ATS"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
+          <ShowAsSigned>1</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>kuro.exe+914A90</Address>
           <Offsets>
@@ -224,7 +224,7 @@ unregisterSymbol(extraStatsChar)
         <CheatEntry>
           <ID>31</ID>
           <Description>"Extra ADF"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
+          <ShowAsSigned>1</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>kuro.exe+914A90</Address>
           <Offsets>
