@@ -145,6 +145,19 @@
             <Offset>112AC</Offset>
           </Offsets>
         </CheatEntry>
+        <CheatEntry>
+          <ID>77</ID>
+          <Description>"Attacks Perfectly Evaded"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>30</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>kuro.exe+914A98</Address>
+          <Offsets>
+            <Offset>112B0</Offset>
+          </Offsets>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
