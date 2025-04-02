@@ -122,6 +122,18 @@
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
+      <ID>73</ID>
+      <Description>"S-Boost"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Float</VariableType>
+      <Address>kuro.exe+914A00</Address>
+      <Offsets>
+        <Offset>10C</Offset>
+        <Offset>1C8</Offset>
+        <Offset>3560</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
       <ID>25</ID>
       <Description>"Stats"</Description>
       <Options moHideChildren="1"/>
@@ -344,18 +356,6 @@ dealloc(newmem)
           <DeactivateSound>Deactivate</DeactivateSound>
         </Hotkey>
       </Hotkeys>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>73</ID>
-      <Description>"S-Boost"</Description>
-      <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>Float</VariableType>
-      <Address>kuro.exe+914A00</Address>
-      <Offsets>
-        <Offset>10C</Offset>
-        <Offset>1C8</Offset>
-        <Offset>3560</Offset>
-      </Offsets>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
