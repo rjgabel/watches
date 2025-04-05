@@ -56,6 +56,32 @@
         </CheatEntry>
         <CheatEntry>
           <ID>92</ID>
+          <Description>"EOTM to Agnes"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>30</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>kuro.exe+914A98</Address>
+          <Offsets>
+            <Offset>1125C</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>108</ID>
+          <Description>"EOTM to Feri"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>30</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>kuro.exe+914A98</Address>
+          <Offsets>
+            <Offset>11260</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>107</ID>
           <Description>"SCLM Chains Activated"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Binary</VariableType>
