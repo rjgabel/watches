@@ -297,6 +297,36 @@ unregisterSymbol(extraStatsChar)
             <Offset>9BCEC+3E8*[extraStatsChar]+B8</Offset>
           </Offsets>
         </CheatEntry>
+        <CheatEntry>
+          <ID>95</ID>
+          <Description>"???"</Description>
+          <ShowAsSigned>1</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>kuro.exe+914A90</Address>
+          <Offsets>
+            <Offset>9BCEC+3E8*[extraStatsChar]+BC</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>96</ID>
+          <Description>"???"</Description>
+          <ShowAsSigned>1</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>kuro.exe+914A90</Address>
+          <Offsets>
+            <Offset>9BCEC+3E8*[extraStatsChar]+C0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>97</ID>
+          <Description>"???"</Description>
+          <ShowAsSigned>1</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>kuro.exe+914A90</Address>
+          <Offsets>
+            <Offset>9BCEC+3E8*[extraStatsChar]+C4</Offset>
+          </Offsets>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
