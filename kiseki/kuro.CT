@@ -327,6 +327,16 @@ unregisterSymbol(extraStatsChar)
             <Offset>9BCEC+3E8*[extraStatsChar]+C4</Offset>
           </Offsets>
         </CheatEntry>
+        <CheatEntry>
+          <ID>106</ID>
+          <Description>"EOTM Points"</Description>
+          <ShowAsSigned>1</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>kuro.exe+914A90</Address>
+          <Offsets>
+            <Offset>9BCEC+3E8*[extraStatsChar]+3D8</Offset>
+          </Offsets>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
