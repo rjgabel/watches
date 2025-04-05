@@ -366,6 +366,7 @@ unregisterSymbol(curHoloCore)
           <DropDownList DisplayValueAsItem="1">0:Mare
 1:Aim
 2:Vine
+3:Sallos
 </DropDownList>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
