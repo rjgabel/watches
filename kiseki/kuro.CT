@@ -2,6 +2,19 @@
 <CheatTable CheatEngineTableVersion="46">
   <CheatEntries>
     <CheatEntry>
+      <ID>119</ID>
+      <Description>"Movie Flag"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Binary</VariableType>
+      <BitStart>3</BitStart>
+      <BitLength>1</BitLength>
+      <ShowAsBinary>0</ShowAsBinary>
+      <Address>kuro.exe+914A98</Address>
+      <Offsets>
+        <Offset>995</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
       <ID>109</ID>
       <Description>"LGC"</Description>
       <Options moHideChildren="1"/>
