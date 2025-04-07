@@ -10,14 +10,14 @@
       <Address>kuro.exe+914A90</Address>
     </CheatEntry>
     <CheatEntry>
-      <ID>36</ID>
-      <Description>"Achievements"</Description>
+      <ID>109</ID>
+      <Description>"LGC"</Description>
       <Options moHideChildren="1"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
           <ID>91</ID>
-          <Description>"Law"</Description>
+          <Description>"Law Points"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Binary</VariableType>
           <BitStart>0</BitStart>
@@ -30,7 +30,7 @@
         </CheatEntry>
         <CheatEntry>
           <ID>93</ID>
-          <Description>"Gray"</Description>
+          <Description>"Gray Points"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Binary</VariableType>
           <BitStart>0</BitStart>
@@ -43,7 +43,7 @@
         </CheatEntry>
         <CheatEntry>
           <ID>94</ID>
-          <Description>"Chaos"</Description>
+          <Description>"Chaos Points"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Binary</VariableType>
           <BitStart>0</BitStart>
@@ -54,6 +54,53 @@
             <Offset>11148</Offset>
           </Offsets>
         </CheatEntry>
+        <CheatEntry>
+          <ID>110</ID>
+          <Description>"Law Level"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>30</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>kuro.exe+914A98</Address>
+          <Offsets>
+            <Offset>111D0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>111</ID>
+          <Description>"Gray Level"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>30</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>kuro.exe+914A98</Address>
+          <Offsets>
+            <Offset>111D4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>112</ID>
+          <Description>"Chaos Level"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>30</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>kuro.exe+914A98</Address>
+          <Offsets>
+            <Offset>111D8</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>36</ID>
+      <Description>"Achievements"</Description>
+      <Options moHideChildren="1"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
         <CheatEntry>
           <ID>92</ID>
           <Description>"EOTM to Agnes"</Description>
