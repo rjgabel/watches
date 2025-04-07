@@ -3,7 +3,7 @@
   <CheatEntries>
     <CheatEntry>
       <ID>119</ID>
-      <Description>"Movie Flag"</Description>
+      <Description>"Watched Movie"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>Binary</VariableType>
       <BitStart>3</BitStart>
