@@ -96,6 +96,16 @@
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
+      <ID>113</ID>
+      <Description>"Free Time"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Byte</VariableType>
+      <Address>kuro.exe+914A98</Address>
+      <Offsets>
+        <Offset>1114C</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
       <ID>36</ID>
       <Description>"Achievements"</Description>
       <Options moHideChildren="1"/>
