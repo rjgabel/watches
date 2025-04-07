@@ -2,14 +2,6 @@
 <CheatTable CheatEngineTableVersion="46">
   <CheatEntries>
     <CheatEntry>
-      <ID>8</ID>
-      <Description>"Base"</Description>
-      <ShowAsHex>1</ShowAsHex>
-      <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>8 Bytes</VariableType>
-      <Address>kuro.exe+914A90</Address>
-    </CheatEntry>
-    <CheatEntry>
       <ID>109</ID>
       <Description>"LGC"</Description>
       <Options moHideChildren="1"/>
