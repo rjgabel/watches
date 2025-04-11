@@ -432,6 +432,7 @@ unregisterSymbol(curHoloCore)
 2:Vine
 3:Sallos
 4:Camio
+27:Nagi EX
 </DropDownList>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
