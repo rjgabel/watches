@@ -321,6 +321,7 @@ unregisterSymbol(extraStatsChar)
 1:Agnes
 2:Feri
 3:Aaron
+13:Elaine
 </DropDownList>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
