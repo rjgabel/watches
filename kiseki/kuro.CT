@@ -315,7 +315,7 @@
     <CheatEntry>
       <ID>25</ID>
       <Description>"Stats"</Description>
-      <Options moHideChildren="1"/>
+      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript>[ENABLE]
 alloc(extraStatsChar,8)
@@ -426,7 +426,7 @@ unregisterSymbol(extraStatsChar)
     <CheatEntry>
       <ID>83</ID>
       <Description>"Holo Core"</Description>
-      <Options moHideChildren="1"/>
+      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript>[ENABLE]
 alloc(curHoloCore,8)
