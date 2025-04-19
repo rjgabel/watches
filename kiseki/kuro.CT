@@ -615,6 +615,17 @@ dealloc(newmem)
         </Hotkey>
       </Hotkeys>
     </CheatEntry>
+    <CheatEntry>
+      <ID>125</ID>
+      <Description>"Party Index"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>kuro.exe+914A38</Address>
+      <Offsets>
+        <Offset>210</Offset>
+        <Offset>4A8</Offset>
+      </Offsets>
+    </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
 </CheatTable>
