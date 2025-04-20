@@ -156,6 +156,19 @@
           </Offsets>
         </CheatEntry>
         <CheatEntry>
+          <ID>126</ID>
+          <Description>"EOTM to Risette"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>30</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>kuro.exe+914A98</Address>
+          <Offsets>
+            <Offset>11268</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
           <ID>107</ID>
           <Description>"SCLM Chains Activated"</Description>
           <ShowAsSigned>0</ShowAsSigned>
