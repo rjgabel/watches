@@ -17,7 +17,7 @@
     <CheatEntry>
       <ID>109</ID>
       <Description>"LGC"</Description>
-      <Options moHideChildren="1"/>
+      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
@@ -113,73 +113,81 @@
     <CheatEntry>
       <ID>36</ID>
       <Description>"Achievements"</Description>
-      <Options moHideChildren="1"/>
+      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
-          <ID>92</ID>
-          <Description>"EOTM to Agnes"</Description>
+          <ID>129</ID>
+          <Description>"EOTM"</Description>
+          <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
           <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>Binary</VariableType>
-          <BitStart>0</BitStart>
-          <BitLength>30</BitLength>
-          <ShowAsBinary>0</ShowAsBinary>
+          <GroupHeader>1</GroupHeader>
           <Address>kuro.exe+914A98</Address>
           <Offsets>
-            <Offset>1125C</Offset>
+            <Offset>1125c</Offset>
           </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>108</ID>
-          <Description>"EOTM to Feri"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>Binary</VariableType>
-          <BitStart>0</BitStart>
-          <BitLength>30</BitLength>
-          <ShowAsBinary>0</ShowAsBinary>
-          <Address>kuro.exe+914A98</Address>
-          <Offsets>
-            <Offset>11260</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>120</ID>
-          <Description>"EOTM to Aaron"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>Binary</VariableType>
-          <BitStart>0</BitStart>
-          <BitLength>30</BitLength>
-          <ShowAsBinary>0</ShowAsBinary>
-          <Address>kuro.exe+914A98</Address>
-          <Offsets>
-            <Offset>11264</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>126</ID>
-          <Description>"EOTM to Risette"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>Binary</VariableType>
-          <BitStart>0</BitStart>
-          <BitLength>30</BitLength>
-          <ShowAsBinary>0</ShowAsBinary>
-          <Address>kuro.exe+914A98</Address>
-          <Offsets>
-            <Offset>11268</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>127</ID>
-          <Description>"EOTM to Quatre"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>Binary</VariableType>
-          <BitStart>0</BitStart>
-          <BitLength>30</BitLength>
-          <ShowAsBinary>0</ShowAsBinary>
-          <Address>kuro.exe+914A98</Address>
-          <Offsets>
-            <Offset>1126C</Offset>
-          </Offsets>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>92</ID>
+              <Description>"EOTM to Agnes"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Binary</VariableType>
+              <BitStart>0</BitStart>
+              <BitLength>30</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>108</ID>
+              <Description>"EOTM to Feri"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Binary</VariableType>
+              <BitStart>0</BitStart>
+              <BitLength>30</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>120</ID>
+              <Description>"EOTM to Aaron"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Binary</VariableType>
+              <BitStart>0</BitStart>
+              <BitLength>30</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>126</ID>
+              <Description>"EOTM to Risette"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Binary</VariableType>
+              <BitStart>0</BitStart>
+              <BitLength>30</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>+C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>127</ID>
+              <Description>"EOTM to Quatre"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Binary</VariableType>
+              <BitStart>0</BitStart>
+              <BitLength>30</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>+10</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>128</ID>
+              <Description>"EOTM to Judith"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Binary</VariableType>
+              <BitStart>0</BitStart>
+              <BitLength>30</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>+14</Address>
+            </CheatEntry>
+          </CheatEntries>
         </CheatEntry>
         <CheatEntry>
           <ID>107</ID>
@@ -515,7 +523,7 @@ unregisterSymbol(curHoloCore)
     <CheatEntry>
       <ID>41</ID>
       <Description>"Sepith"</Description>
-      <Options moHideChildren="1"/>
+      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
       <ShowAsSigned>0</ShowAsSigned>
       <GroupHeader>1</GroupHeader>
       <Address>kuro.exe+914A90</Address>
