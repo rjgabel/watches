@@ -689,6 +689,7 @@ dealloc(newmem)
           <Description>"Member 1"</Description>
           <DropDownList DisplayValueAsItem="1">0:Van
 1:Agnes
+2:Feri
 </DropDownList>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
