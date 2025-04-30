@@ -708,6 +708,17 @@ dealloc(newmem)
             <Offset>8</Offset>
           </Offsets>
         </CheatEntry>
+        <CheatEntry>
+          <ID>138</ID>
+          <Description>"Member 3"</Description>
+          <DropDownListLink>Member 1</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+0</Address>
+          <Offsets>
+            <Offset>10</Offset>
+          </Offsets>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
   </CheatEntries>
