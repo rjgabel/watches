@@ -385,7 +385,9 @@ unregisterSymbol(partyIndex)
 1:Agnes
 2:Feri
 3:Aaron
+6:Risette
 11:Elaine
+63:Fie
 </DropDownList>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
