@@ -660,15 +660,55 @@ dealloc(newmem)
       </Hotkeys>
     </CheatEntry>
     <CheatEntry>
-      <ID>125</ID>
-      <Description>"Party Index"</Description>
+      <ID>135</ID>
+      <Description>"Party"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
+      <GroupHeader>1</GroupHeader>
       <Address>kuro.exe+914A38</Address>
       <Offsets>
-        <Offset>210</Offset>
+        <Offset>200</Offset>
         <Offset>4A8</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>134</ID>
+          <Description>"Size"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>133</ID>
+          <Description>"Leader Index"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+10</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>125</ID>
+          <Description>"Member 1"</Description>
+          <DropDownList DisplayValueAsItem="1">0:Van
+1:Agnes
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+0</Address>
+          <Offsets>
+            <Offset>0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>137</ID>
+          <Description>"Member 2"</Description>
+          <DropDownListLink>Member 1</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+0</Address>
+          <Offsets>
+            <Offset>8</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
