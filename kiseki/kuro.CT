@@ -380,7 +380,7 @@ unregisterSymbol(partyIndex)
         </CheatEntry>
         <CheatEntry>
           <ID>142</ID>
-          <Description>"Member 1"</Description>
+          <Description>"Member"</Description>
           <DropDownList DisplayValueAsItem="1">0:Van
 1:Agnes
 2:Feri
@@ -395,6 +395,18 @@ unregisterSymbol(partyIndex)
           <Address>kuro.exe+914A38</Address>
           <Offsets>
             <Offset>8*[partyIndex]</Offset>
+            <Offset>200</Offset>
+            <Offset>4A8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>143</ID>
+          <Description>"Flags"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>kuro.exe+914A38</Address>
+          <Offsets>
+            <Offset>8*[partyIndex]+4</Offset>
             <Offset>200</Offset>
             <Offset>4A8</Offset>
           </Offsets>
