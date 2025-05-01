@@ -2,15 +2,57 @@
 <CheatTable CheatEngineTableVersion="46">
   <CheatEntries>
     <CheatEntry>
-      <ID>119</ID>
+      <ID>152</ID>
       <Description>"Alliance (Chapter 5)"</Description>
-      <ShowAsHex>1</ShowAsHex>
+      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>2 Bytes</VariableType>
+      <GroupHeader>1</GroupHeader>
       <Address>kuro.exe+914A98</Address>
       <Offsets>
         <Offset>885</Offset>
       </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>153</ID>
+          <Description>"Bracer Guild"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>+0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>154</ID>
+          <Description>"Heiyue"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>+1</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>155</ID>
+          <Description>"Ikaruga"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>+1</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>156</ID>
+          <Description>"Ouroboros"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>+1</Address>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
       <ID>151</ID>
