@@ -3,6 +3,17 @@
   <CheatEntries>
     <CheatEntry>
       <ID>119</ID>
+      <Description>"Alliance (Chapter 5)"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>kuro.exe+914A98</Address>
+      <Offsets>
+        <Offset>885</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>151</ID>
       <Description>"Watched Movie"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>Binary</VariableType>
