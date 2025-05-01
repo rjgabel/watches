@@ -459,6 +459,7 @@ unregisterSymbol(extraStatsChar)
 7:Bergard
 13:Elaine
 14:Fie
+15:Yin
 </DropDownList>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
