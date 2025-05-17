@@ -240,6 +240,16 @@
               <ShowAsBinary>0</ShowAsBinary>
               <Address>+14</Address>
             </CheatEntry>
+            <CheatEntry>
+              <ID>157</ID>
+              <Description>"EOTM to Bergard"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Binary</VariableType>
+              <BitStart>0</BitStart>
+              <BitLength>30</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>+18</Address>
+            </CheatEntry>
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
