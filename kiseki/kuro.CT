@@ -569,6 +569,21 @@ unregisterSymbol(partyIndex)
 152:Dominion Leon
 153:Ashladd
 154:Ishtanti
+200:Mare
+201:Aim
+202:Vine
+203:Sallos
+204:Camio
+205:Carabia
+206:Sitri
+207:Otis
+208:Raym
+209:Pocel
+210:Gaap
+211:Oze
+212:Loray
+213:Nagi
+214:Bathym
 </DropDownList>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
