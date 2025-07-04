@@ -38,6 +38,20 @@
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
+      <ID>177</ID>
+      <Description>"Next Map"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>String</VariableType>
+      <Length>10</Length>
+      <Unicode>0</Unicode>
+      <CodePage>0</CodePage>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>kuro.exe+914A38</Address>
+      <Offsets>
+        <Offset>124</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
       <ID>152</ID>
       <Description>"Alliance (Chapter 5)"</Description>
       <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
@@ -489,6 +503,7 @@ unregisterSymbol(partyIndex)
 6:Risette
 7:Walter
 8:Zin
+9:Kincaid
 10:Judith
 11:Elaine
 12:Shizuna
@@ -935,6 +950,19 @@ kuro.exe+417846: E8 A5 E2 FF FF  - call kuro.exe+415AF0
           <DeactivateSound>Deactivate</DeactivateSound>
         </Hotkey>
       </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>179</ID>
+      <Description>"Map Breakpoint"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{$lua}
+if syntaxcheck then return end
+[ENABLE]
+debug_setBreakpoint("kuro.exe+20CD30")
+[DISABLE]
+debug_removeBreakpoint("kuro.exe+20CD30")
+
+</AssemblerScript>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
