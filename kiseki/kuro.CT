@@ -584,6 +584,10 @@ unregisterSymbol(partyIndex)
 212:Loray
 213:Nagi
 214:Bathym
+220:Voice Mod (Young Hamilton)
+221:Voice Mod (Renne)
+222:Voice Mod (Actress Judith)
+223:Voice Mod (Roaring Lion Barkhorn)
 </DropDownList>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
