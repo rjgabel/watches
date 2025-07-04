@@ -509,11 +509,66 @@ unregisterSymbol(partyIndex)
 12:Shizuna
 13:Kurogane
 14:Lucrezia
+15:Grendel
 62:Rixia
 63:Fie
+64:FIO
+65:XEROS
+100:Alexandre
+101:Melchior
+102:Dantes
+103:Arioch
+104:Harwood
+105:President Gramheart
+106:Bracer Alvis
 107:Cao
 108:Sherid
+109:Renne
+110:Viola
+111:Olympia
 112:Naje
+113:Aida
+114:Paulette
+115:Victor
+116:Yume
+117:Giacomo
+118:Detective Nate
+119:Inspector Daswani
+120:2nd Lieutenant Kaela
+121:Marielle
+122:Dingo
+123:Bermotti
+124:Commander Geraint
+125:Vice Chief Hasan
+126:Kilika
+127:Odette
+128:Albert
+129:Nina
+130:Maxim
+131:Ashen
+132:Fan
+133:Elden Gien
+134:Jack
+135:Halle
+136:Saara
+137:Shaheena
+138:Director Gotti
+139:President Dillon
+140:Professor Hamilton
+141:Associate Professor Esmeray
+142:Professor Cronkite
+143:Chief Engineer Giscard
+144:CEO Tausend
+145:Professor Callaghan
+146:Rocksmith
+147:Warrant Officer Cody
+148:President Auclair
+149:Security Chief Kasim
+150:General Manager Thorndyke
+151:Dominion Celis
+152:Dominion Leon
+153:Ashladd
+154:Ishtanti
 </DropDownList>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
