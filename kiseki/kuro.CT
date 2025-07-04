@@ -538,6 +538,58 @@ unregisterSymbol(partyIndex)
             <Offset>4A8</Offset>
           </Offsets>
         </CheatEntry>
+        <CheatEntry>
+          <ID>186</ID>
+          <Description>"Name index base"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>8 Bytes</VariableType>
+          <Address>"kuro.exe"+00914A28</Address>
+          <Offsets>
+            <Offset>58*$1+38</Offset>
+            <Offset>10</Offset>
+            <Offset>8</Offset>
+            <Offset>10</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>185</ID>
+          <Description>"Name index base"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>8 Bytes</VariableType>
+          <Address>"kuro.exe"+00914A28</Address>
+          <Offsets>
+            <Offset>58*$115</Offset>
+            <Offset>10</Offset>
+            <Offset>8</Offset>
+            <Offset>10</Offset>
+          </Offsets>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>187</ID>
+              <Description>"Name index base"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+38</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>188</ID>
+              <Description>"Name index base"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>10</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+38</Address>
+              <Offsets>
+                <Offset>0</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
@@ -803,6 +855,30 @@ unregisterSymbol(curHoloCore)
           <VariableType>4 Bytes</VariableType>
           <Address>+1C</Address>
         </CheatEntry>
+        <CheatEntry>
+          <ID>193</ID>
+          <Description>"No description"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>455F47ABFA0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>194</ID>
+          <Description>"pointerscan result"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>"kuro.exe"+00914A38</Address>
+          <Offsets>
+            <Offset>2B4</Offset>
+            <Offset>0</Offset>
+            <Offset>140</Offset>
+            <Offset>90</Offset>
+            <Offset>C8</Offset>
+            <Offset>F8</Offset>
+          </Offsets>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
@@ -963,6 +1039,52 @@ debug_setBreakpoint("kuro.exe+20CD30")
 [DISABLE]
 debug_removeBreakpoint("kuro.exe+20CD30")
 
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>195</ID>
+      <Description>"Remove Debug Map Load Code"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"kuro.exe"+2F374B)
+define(bytes,75 3F)
+
+[ENABLE]
+//assert(address,bytes)
+address:
+  jmp kuro.exe+2F378C
+
+[DISABLE]
+//address:
+  //db bytes
+  // jne kuro.exe+2F378C
+
+{
+// ORIGINAL CODE - INJECTION POINT: kuro.exe+2F374B
+
+kuro.exe+2F3717: E9 31 05 00 00                    - jmp kuro.exe+2F3C4D
+kuro.exe+2F371C: 48 8B 74 24 28                    - mov rsi,[rsp+28]
+kuro.exe+2F3721: 48 C7 C0 FF FF FF FF              - mov rax,FFFFFFFFFFFFFFFF
+kuro.exe+2F3728: 0F 1F 84 00 00 00 00 00           - nop dword ptr [rax+rax+00000000]
+kuro.exe+2F3730: 48 FF C0                          - inc rax
+kuro.exe+2F3733: 41 80 BC 06 0C 15 01 00 00        - cmp byte ptr [r14+rax+0001150C],00
+kuro.exe+2F373C: 75 F2                             - jne kuro.exe+2F3730
+kuro.exe+2F373E: 48 85 C0                          - test rax,rax
+kuro.exe+2F3741: 74 49                             - je kuro.exe+2F378C
+kuro.exe+2F3743: 41 80 BE 0C 15 01 00 61           - cmp byte ptr [r14+0001150C],61
+// ---------- INJECTING HERE ----------
+kuro.exe+2F374B: 75 3F                             - jne kuro.exe+2F378C
+// ---------- DONE INJECTING  ----------
+kuro.exe+2F374D: C7 86 10 08 19 00 0A 00 00 00     - mov [rsi+00190810],0000000A
+kuro.exe+2F3757: 48 8D 0D DB 79 4E 00              - lea rcx,[kuro.exe+7DB139]
+kuro.exe+2F375E: BA 9F 85 FB 41                    - mov edx,41FB859F
+kuro.exe+2F3763: E8 78 C6 D3 FF                    - call kuro.exe+2FDE0
+kuro.exe+2F3768: 8B D0                             - mov edx,eax
+kuro.exe+2F376A: E8 51 FD FF FF                    - call kuro.exe+2F34C0
+kuro.exe+2F376F: 48 63 86 CC 00 00 00              - movsxd  rax,dword ptr [rsi+000000CC]
+kuro.exe+2F3776: 48 8D 0C 40                       - lea rcx,[rax+rax*2]
+kuro.exe+2F377A: C7 84 8E 9C 00 00 00 0E 00 00 00  - mov [rsi+rcx*4+0000009C],0000000E
+kuro.exe+2F3785: 32 C0                             - xor al,al
+}
 </AssemblerScript>
     </CheatEntry>
   </CheatEntries>
