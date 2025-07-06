@@ -35,6 +35,13 @@
           <VariableType>Float</VariableType>
           <Address>+8</Address>
         </CheatEntry>
+        <CheatEntry>
+          <ID>195</ID>
+          <Description>"Rotation"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+24</Address>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
@@ -42,7 +49,7 @@
       <Description>"Next Map"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>String</VariableType>
-      <Length>10</Length>
+      <Length>16</Length>
       <Unicode>0</Unicode>
       <CodePage>0</CodePage>
       <ZeroTerminate>1</ZeroTerminate>
